@@ -1,0 +1,207 @@
+.section {
+  padding: 3.75rem 0;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+.contentSide {
+  flex: 1;
+}
+
+.lastUpdated {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.textContent p {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 1.5px solid var(--primary);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.outline:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.share {
+  background-color: #25D366; /* WhatsApp Green */
+  color: white;
+  border-color: #25D366;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.share:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  transform: translateY(-2px);
+}
+
+.imageSide {
+  flex: 1;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: visible;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mainImage {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.4;
+  border-left: 4px solid var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .container {
+    gap: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .textContent {
+    margin-bottom: 2rem;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .floatingBadge {
+    left: 1rem;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.75rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .floatingBadge {
+    position: static;
+    margin-top: 1.5rem;
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.panchangaWrapper {
+  /* margin-top: 5rem; */
+  width: 100%;
+  padding: 0 var(--spacing-container);
+  max-width: var(--container-width);
+  margin: 4rem auto 0;
+}

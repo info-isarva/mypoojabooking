@@ -1,0 +1,192 @@
+.section {
+  padding: 5rem 0;
+  background-color: #F9F7F2;
+}
+
+.container {
+  /*max-width: 1200px;*/
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.sevasCard {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  color: #D97706;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+  color: #D97706;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  font-family: var(--font-serif, serif);
+}
+
+.sevasList {
+  display: flex;
+  flex-direction: column;
+}
+
+.sevaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.sevaRow:last-child {
+  border-bottom: none;
+}
+
+.sevaInfo {
+  flex: 1;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sevaName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4B5563;
+}
+
+.sevaIcons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sevaIcon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+}
+
+.sevaNote {
+  font-size: 1rem;
+  color: #9CA3AF;
+  margin-top: 0.25rem;
+  max-width: 450px;
+}
+
+.sevaPrice {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.actionArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.bookBtn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Key Details Card */
+.keyDetailsCard {
+  background-color: #4A0E0E;
+  color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+
+.detailsHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.detailsHeader h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: var(--font-serif, serif);
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detailItem {
+  background: white;
+  color: #4B5563;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.detailIcon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sevasCard,
+  .keyDetailsCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .nameRow {
+    flex-wrap: wrap;
+  }
+}

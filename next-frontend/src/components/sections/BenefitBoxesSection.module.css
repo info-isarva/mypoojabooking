@@ -1,0 +1,99 @@
+.section {
+  padding: 3.75rem 0;
+  background-color: #E5E2DC;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.mainCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.devoteeSide,
+.partnerSide {
+  padding: 4rem 4rem;
+}
+
+.partnerSide {
+  background-color: #F5F2EE;
+}
+
+.tag {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #D97706;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-sub);
+  margin-bottom: 2.5rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.point {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.iconWrapper {
+  margin-top: 4px;
+  color: #D97706;
+  flex-shrink: 0;
+}
+
+.pointTitle {
+  font-size: 1.35rem;
+  color: var(--text-sub);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+.pointDesc {
+  font-size: 1rem;
+  color: #525252;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .mainCard {
+    grid-template-columns: 1fr;
+  }
+
+  .devoteeSide,
+  .partnerSide {
+    padding: 4rem 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .pointTitle {
+    font-size: 1.2rem;
+  }
+}

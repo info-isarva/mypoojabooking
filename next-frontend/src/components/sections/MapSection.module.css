@@ -1,0 +1,22 @@
+.section {
+  width: 100%;
+  line-height: 0; /* Remove potential white space at bottom */
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px;
+  background-color: #eee;
+  filter: grayscale(0.2) contrast(1.1);
+  transition: filter 0.3s;
+}
+
+.mapContainer:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+  .mapContainer {
+    height: 350px;
+  }
+}

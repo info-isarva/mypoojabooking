@@ -1,0 +1,165 @@
+.section {
+  padding: 3.75rem 0;
+  /* background-color: var(--bg-color); */
+  background-color: #F6F3EE;
+  ;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 64px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin: 0 auto 3rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 3.5rem;
+}
+
+.deityBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.deityBtn:hover {
+  transform: translateY(-4px);
+}
+
+.deityBtn:hover .iconCircle {
+  background: var(--primary-light);
+  border-color: var(--primary);
+}
+
+.deityBtn:hover .label {
+  color: var(--primary);
+}
+
+.deityBtn.active .iconCircle {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.deityBtn.active .icon {
+  filter: brightness(0) invert(1);
+}
+
+.deityBtn.active .label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.iconCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #e2d9d0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5rem 0.5rem;
+  }
+
+  .iconCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.75rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.25rem 0;
+  }
+
+  .iconCircle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+}

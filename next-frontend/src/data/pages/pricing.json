@@ -1,0 +1,72 @@
+{
+  "title": "Pricing",
+  "slug": "/pricing",
+  "seo": {
+    "metaTitle": "Pricing - BookMyPooja",
+    "description": "Simple and transparent pricing for devotees and temple partners."
+  },
+  "sections": [
+    {
+      "id": "pricing-hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "Transparent",
+        "headlineAccent": "Offerings",
+        "subheadline": "Connecting devotees with divinity through a clear and simple framework.",
+        "ctas": [
+          { "text": "PARTNER LOGIN", "link": "/temple-login", "variant": "primary" }
+        ],
+        "footerText": "Authorised Booking Partner",
+        "banner": "/assets/images/pricing-hero.png"
+      }
+    },
+    {
+      "id": "pricing-cards",
+      "type": "PricingCardsSection",
+      "props": {
+        "devotee": {
+          "tag": "FOR DEVOTEES",
+          "title": "Convenience Fee",
+          "price": "₹0",
+          "unit": "/ booking",
+          "description": "Our platform is currently free for devotees. We believe in providing seamless access to spiritual services without additional digital barriers.",
+          "features": [
+            "24/7 Digital Booking Access",
+            "Instant Confirmation Receipts"
+          ]
+        },
+        "institution": {
+          "tag": "FOR INSTITUTIONS",
+          "title": "Temple Onboarding",
+          "price": "Custom Quote",
+          "description": "Complete digital transformation for your institution, including profile setup, staff training, and ongoing technical support.",
+          "items": [
+            { "label": "One-time Setup", "status": "REQUIRED" },
+            { "label": "Annual Maintenance", "status": "OPTIONAL" }
+          ],
+          "buttonText": "Contact for Pricing",
+          "buttonLink": "/contact"
+        }
+      }
+    },
+    {
+      "id": "pricing-guidelines",
+      "type": "PricingGuidelinesSection",
+      "props": {
+        "title": "Sacred Guidelines",
+        "guidelines": [
+          "All figures mentioned on this platform are in <strong>Indian Rupees (INR)</strong>.",
+          "Convenience fees are always transparently displayed before any transaction is finalized.",
+          "Special institutional waivers and support are available for historic and heritage temples."
+        ],
+        "partnerCard": {
+          "title": "Partner With Us",
+          "description": "Join our ecosystem to reach devotees worldwide. Let us manage the technology so you can focus on the sacred.",
+          "email": "contact@mypoojabooking.com",
+          "buttonText": "Register Institution",
+          "buttonLink": "/contact"
+        }
+      }
+    }
+  ]
+}

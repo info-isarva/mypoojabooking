@@ -1,0 +1,202 @@
+.section {
+  padding: 3.75rem 0;
+  background-color: white;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #F37021;
+  /* Saffron color */
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6B7280;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin: 0 auto 1.75rem;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.processIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.step:hover .iconContainer {
+  transform: translateY(-5px);
+}
+
+.connector {
+  position: absolute;
+  top: 40px;
+  /* Center of the 80px iconContainer */
+  left: 50%;
+  width: 100%;
+  height: 0;
+  border-top: 2px dotted #D4AF3740;
+  z-index: -1;
+}
+
+@media (min-width: 1400px) {
+  /* Keep standard center-to-center logic */
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  max-width: 160px;
+  line-height: 1.4;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stepper {
+    gap: 1.5rem;
+  }
+
+  .iconContainer {
+    width: 55px;
+    height: 55px;
+  }
+
+  .stepTitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .stepper {
+    flex-direction: row;
+    /* Keep horizontal on tablet */
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  .connector {
+    top: 25px;
+    /* Center of the 50px iconContainer */
+    left: 50%;
+    width: 100%;
+    border-top: 1.5px dotted #D4AF3740;
+  }
+
+  .iconContainer {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .stepTitle {
+    font-size: 1rem;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .stepper {
+    flex-direction: column;
+    gap: 2.25rem;
+    align-items: center;
+  }
+
+  .connector {
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 30px;
+    /* Start from center of icon */
+    border-top: none;
+    border-left: 1.5px dotted #D4AF3740;
+  }
+
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.75rem;
+  }
+
+  .stepTitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.75rem 0;
+  }
+
+  .stepper {
+    gap: 1.75rem;
+  }
+
+  .connector {
+    height: 1.75rem;
+  }
+
+  .iconContainer {
+    width: 55px;
+    height: 55px;
+  }
+
+  .stepTitle {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "title": "Bhajans & Stotras",
+  "slug": "/bhajans-stotras",
+  "seo": {
+    "metaTitle": "Bhajans & Stotras - Divine Chants, Mantras & Sacred Hymns | BookMyPooja",
+    "description": "Immerse yourself in divine vibrations with our curated collection of ancient chants and soul-stirring hymns. Explore bhajans, stotras, and mantras."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "BhajanListingHero",
+      "props": {
+        "headline": "Bhajans & Stotras",
+        "headlineAccent": "Stotras",
+        "subheadline": "Immerse yourself in divine vibrations with our curated collection of ancient chants and soul-stirring hymns.",
+        "banner": "/assets/images/bajanas/hero.png",
+        "ctas": []
+      }
+    },
+    {
+      "id": "featured-tracks",
+      "type": "FeaturedTracks",
+      "props": {
+        "title": "Featured Tracks",
+        "items": [
+          {
+            "title": "Vishnu Sahasranamam",
+            "category": "STOTRA",
+            "artist": "Pandit Jasraj",
+            "image": "/assets/images/bajanas/vishnu_sahasranamam.png"
+          },
+          {
+            "title": "Shiva Tandava",
+            "category": "SHIVA STOTRAS",
+            "artist": "Shankar Mahadevan",
+            "image": "/assets/images/bajanas/hanuman_chalisa.png"
+          },
+          {
+            "title": "Om Namo Narayana",
+            "category": "PEACEFUL MANTRAS",
+            "artist": "Anuradha Paudwal",
+            "image": "/assets/images/bajanas/lalitha_sahasranamam.png"
+          },
+          {
+            "title": "Om Namo Narayana",
+            "category": "PEACEFUL MANTRAS",
+            "artist": "Anuradha Paudwal",
+            "image": "/assets/images/bajanas/lalitha_sahasranamam.png"
+          }
+        ]
+      }
+    },
+    {
+      "id": "deity-filter",
+      "type": "DeityFilter",
+      "props": {
+        "title": "Explore by Deity",
+        "deities": [
+          {
+            "icon": "/assets/images/icons/shiva.svg",
+            "label": "Shiva Bhajans"
+          },
+          {
+            "icon": "/assets/images/icons/krishna.svg",
+            "label": "Krishna Bhajans"
+          },
+          {
+            "icon": "/assets/images/icons/hanuman.svg",
+            "label": "Hanuman Chalisa"
+          },
+          {
+            "icon": "/assets/images/icons/peacefull.svg",
+            "label": "Peaceful Mantras"
+          },
+          {
+            "icon": "/assets/images/icons/ganesha.svg",
+            "label": "Ganesha Stotras"
+          },
+          {
+            "icon": "/assets/images/icons/devi.svg",
+            "label": "Devi Stotras"
+          }
+        ]
+      }
+    },
+    {
+      "id": "devotional-library",
+      "type": "DevotionalLibrary",
+      "props": {
+        "title": "Devotional Library",
+        "items": [
+          {
+            "title": "Vishnu Sahasranamam",
+            "subtitle": "M.S. Subbulakshmi",
+            "image": "/assets/images/bajanas/vishnu_sahasranamam.png",
+            "tag": "STOTRA",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Vishnu",
+              "Peaceful"
+            ]
+          },
+          {
+            "title": "Hanuman Chalisa",
+            "subtitle": "Hariharan",
+            "image": "/assets/images/bajanas/hanuman_chalisa.png",
+            "tag": "CHANT",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Hanuman"
+            ]
+          },
+          {
+            "title": "Lalitha Sahasranamam",
+            "subtitle": "Bambay Sisters",
+            "image": "/assets/images/bajanas/lalitha_sahasranamam.png",
+            "tag": "STOTRA",
+            "type": "read",
+            "link": "#",
+            "deities": [
+              "Devi"
+            ]
+          },
+          {
+            "title": "Jai Ganesh Deva",
+            "subtitle": "Suresh Wadkar",
+            "image": "/assets/images/bajanas/vishnu_sahasranamam.png",
+            "tag": "AARTI",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Ganesha"
+            ]
+          },
+          {
+            "title": "Aigiri Nandini",
+            "subtitle": "Raga Devi",
+            "image": "/assets/images/bajanas/lalitha_sahasranamam.png",
+            "tag": "BHAJAN",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Devi"
+            ]
+          },
+          {
+            "title": "Nirvana Shatakam",
+            "subtitle": "Sounds of Isha",
+            "image": "/assets/images/bajanas/hanuman_chalisa.png",
+            "tag": "PEACEFUL",
+            "type": "read",
+            "link": "#",
+            "deities": [
+              "Shiva",
+              "Peaceful"
+            ]
+          },
+          {
+            "title": "Govind Bolo",
+            "subtitle": "Anuradha Paudwal",
+            "image": "/assets/images/bajanas/vishnu_sahasranamam.png",
+            "tag": "BHAJAN",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Krishna"
+            ]
+          },
+          {
+            "title": "Shiva Tandava",
+            "subtitle": "Shankar Mahadevan",
+            "image": "/assets/images/bajanas/hanuman_chalisa.png",
+            "tag": "STOTRA",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Shiva"
+            ]
+          },
+          {
+            "title": "Om Namah Shivaya",
+            "subtitle": "Sanskrit · Mantra",
+            "image": "/assets/images/bajanas/lalitha_sahasranamam.png",
+            "tag": "MANTRA",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Shiva",
+              "Peaceful"
+            ]
+          },
+          {
+            "title": "Gayatri Mantra",
+            "subtitle": "Sanskrit · Vedic",
+            "image": "/assets/images/bajanas/vishnu_sahasranamam.png",
+            "tag": "MANTRA",
+            "type": "play",
+            "link": "#",
+            "deities": [
+              "Devi",
+              "Peaceful"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "newsletter",
+      "type": "NewsletterCta",
+      "props": {
+        "title": "Deepen Your Spiritual Journey",
+        "subtitle": "Sign up for our newsletter to receive weekly curations of top bhajans and we shall share mantras directly in your inbox.",
+        "placeholder": "Your E-mail address",
+        "buttonText": "Subscribe Now"
+      }
+    }
+  ]
+}

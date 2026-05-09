@@ -1,0 +1,406 @@
+{
+  "title": "Shree Dwarkadhish Temple",
+  "slug": "/temples/dwarkadhish",
+  "lastUpdated": "2026-05-07",
+  "seo": {
+    "metaTitle": "Shree Dwarkadhish Temple - Online Seva Booking | MyPoojaBooking",
+    "description": "Book sevas, view festival calendar, timings and temple information for Shree Dwarkadhish Temple, Dwarka. Authorised digital booking partner."
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Shree Dwarkadhish Temple",
+      "description": "The Jagat Mandir, a Hindu temple dedicated to Lord Krishna.",
+      "image": "https://mypoojabooking.com/temples/dwarkadhish/og-image.jpg",
+      "url": "https://mypoojabooking.com/temples/dwarkadhish/",
+      "telephone": "+91 2892 234 180",
+      "email": "info@dwarkadhish.org",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dwarkadhish Temple Road",
+        "addressLocality": "Dwarka",
+        "addressRegion": "Gujarat",
+        "postalCode": "361335",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "22.2376",
+        "longitude": "68.9674"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "13:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "17:00",
+          "closes": "21:00"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mypoojabooking.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Temples",
+          "item": "https://mypoojabooking.com/temples/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Shree Dwarkadhish Temple",
+          "item": "https://mypoojabooking.com/temples/dwarkadhish/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "Shree Dwarkadhish Temple",
+        "headlineAccent": " - Seva Booking & Temple Information",
+        "subheadline": "Dwarka, Gujarat | Lord Krishna (Dwarkadhish)",
+        "footerText": "Authorised Booking Partner",
+        "banner": "/assets/images/dwaraka_temple/dwaraka_banner.png",
+        "ctas": [
+          {
+            "text": "BOOK NEW POOJA",
+            "link": "/book/dwarkadhish",
+            "variant": "primary"
+          },
+          {
+            "text": "Reaching",
+            "link": "#reach-us",
+            "variant": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "info-bar",
+      "type": "TempleInfoBar",
+      "props": {
+        "items": [
+          {
+            "label": "Temple Timings",
+            "value": "6:00 AM – 1:30 PM | 5:00 PM – 9:00 PM"
+          },
+          {
+            "label": "Daily Seva Timings",
+            "value": "Mahapuja: 12:30 PM | Evening Arati: 7:30 PM"
+          },
+          {
+            "label": "Quick Note",
+            "value": "Traditional attire is encouraged for Darshan."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about",
+      "type": "AboutTemple",
+      "props": {
+        "lastUpdated": "2026-05-07",
+        "title": "About the Temple",
+        "content": [
+          "MyPoojaBooking is an authorised digital platform for booking poojas and sevas at Shree Dwarkadhish Temple, Dwarka. We provide authentic spiritual services and direct temple booking facility for devotees worldwide.",
+          "Shree Dwarkadhish Temple, also known as the Jagat Mandir, is a Hindu temple dedicated to Lord Krishna, who is worshipped here by the name Dwarkadhish, or 'King of Dwarka'. The temple is located at Dwarka city, Gujarat, India, which is one of the destinations of Char Dham, a Hindu pilgrimage circuit.",
+          "The main shrine of the five-storied building, supported by 72 pillars, is known as Jagat Mandir or Nija Mandir. Archaeological findings suggest it is 2,200 - 2,500 years old. The temple was enlarged in the 15th-16th century. According to tradition, the original temple was believed to have been built by Krishna's grandson, Vajranabha, over the hari-griha (Lord Krishna's residential place)."
+        ],
+        "image": "/assets/images/dwaraka_temple/dwaraka.png",
+        "badgeText": "The temple dates back to almost 2,500 years, making it one of the oldest spiritual destinations.",
+        "ctas": [
+          {
+            "text": "Book Pooja",
+            "link": "/book/dwarkadhish",
+            "variant": "primary"
+          },
+          {
+            "text": "Festival Calender",
+            "link": "/plan-visit",
+            "variant": "outline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sevas",
+      "type": "TempleSevas",
+      "props": {
+        "title": "Daily & Periodic Sevas",
+        "sevas": [
+          {
+            "name": "Abhisheka Seva",
+            "price": "₹501",
+            "icons": [
+              "visitNotRequired",
+              "prasadam"
+            ]
+          },
+          {
+            "name": "Archana (Kumkum/Pushpa)",
+            "price": "₹51",
+            "icons": [
+              "visitNotRequired",
+              "prasadam"
+            ]
+          },
+          {
+            "name": "Thulabhara Seva",
+            "price": "₹200",
+            "note": "(₹200 if devotee provides items; additional charges if provided by the temple)",
+            "icons": [
+              "visitRequired"
+            ]
+          },
+          {
+            "name": "Sahasranama Archana",
+            "price": "₹251",
+            "icons": [
+              "visitNotRequired",
+              "cutoff",
+              "prasadam"
+            ]
+          }
+        ],
+        "highlight": {
+          "title": "Worship Highlights",
+          "description": "Experience the divine grace of Shree Dwarkadhish in its most authentic form. Secure your slot for the prestigious Mangala Aarti and receive sacred prasadam blessed by the Lord.",
+          "ctaText": "Book Seva",
+          "ctaLink": "/book-seva"
+        }
+      }
+    },
+    {
+      "id": "annual-celebrations",
+      "type": "MajorCelebrations",
+      "props": {
+        "title": "Major Annual Celebrations",
+        "items": [
+          {
+            "month": "October",
+            "title": "Navarathri",
+            "description": "9 days of grand Alankara and Devi Mahatmya Pathana."
+          },
+          {
+            "month": "February",
+            "title": "Maha Shivaratri",
+            "description": "Overnight Jagaran and continuous Rudrabhisheka."
+          },
+          {
+            "month": "April",
+            "title": "Bhakti Utsava",
+            "description": "A week of spiritual discourses and Keertans."
+          },
+          {
+            "month": "Varies",
+            "title": "Karthika Deepotsava",
+            "description": "The temple is lit with 10,000 oil lamps."
+          }
+        ],
+        "specialEvent": {
+          "tag": "ANNUAL SPECIAL",
+          "title": "Janmashtami 2026",
+          "description": "Celebrated with grand Shringar Aarti, devotional bhajans, and special midnight rituals, the festival marks the divine birth of Lord Krishna. The temple is beautifully decorated, drawing thousands of devotees for a vibrant and spiritually uplifting experience.",
+          "image": "/assets/images/dwaraka_temple/krishna.png",
+          "cta1Text": "Book Related Sevas",
+          "cta2Text": "See Full Calendar"
+        }
+      }
+    },
+    {
+      "id": "festival-calendar",
+      "type": "HorizontalScroller",
+      "props": {
+        "title": "Festival Calendar 2026-27",
+        "cardType": "festival",
+        "items": [
+          {
+            "day": "14th",
+            "month": "Mar, 2026",
+            "title": "Holi Festival",
+            "location": "Dwarka"
+          },
+          {
+            "day": "17th",
+            "month": "Apr, 2026",
+            "title": "Ram Navami",
+            "location": "Dwarka"
+          },
+          {
+            "day": "10th",
+            "month": "May, 2026",
+            "title": "Akshaya Tritiya",
+            "location": "Dwarka"
+          },
+          {
+            "day": "26th",
+            "month": "Aug, 2027",
+            "title": "Janmashtami",
+            "location": "Dwarka"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "TempleGallery",
+      "props": {
+        "title": "Temple Gallery",
+        "images": [
+          {
+            "url": "/assets/images/dwaraka_temple/1.png",
+            "alt": "Main Entrance"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/2.png",
+            "alt": "Temple Spire"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/3.png",
+            "alt": "Night View"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/4.png",
+            "alt": "Intricate Carvings"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/5.png",
+            "alt": "Temple Spire"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/6.png",
+            "alt": "Night View"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/7.png",
+            "alt": "Intricate Carvings"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/1.png",
+            "alt": "Main Entrance"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/2.png",
+            "alt": "Temple Spire"
+          },
+          {
+            "url": "/assets/images/dwaraka_temple/3.png",
+            "alt": "Night View"
+          }
+        ]
+      }
+    },
+    {
+      "id": "guidelines",
+      "type": "TempleGuidelines",
+      "props": {
+        "title": "Temple Guidelines",
+        "subtitle": "Inform you for a smooth and sacred experience while visiting the temple.",
+        "guidelines": [
+          {
+            "icon": "/assets/images/icons/temple-guidlines/dress-code.svg",
+            "title": "Dress Code",
+            "description": "Traditional attire preferred. Avoid shorts, skirts, or sleeveless clothes."
+          },
+          {
+            "icon": "/assets/images/icons/temple-guidlines/photography.svg",
+            "title": "Photography",
+            "description": "Cameras and mobile phones are strictly prohibited inside the main shrine."
+          },
+          {
+            "icon": "/assets/images/icons/temple-guidlines/banned-items.svg",
+            "title": "Banned Items",
+            "description": "Leather items, umbrellas, and electronics must be left in lockers."
+          },
+          {
+            "icon": "/assets/images/icons/temple-guidlines/hygiene.svg",
+            "title": "Hygiene",
+            "description": "Wash hands and feet at Gomti Ghat before entering the temple complex."
+          }
+        ]
+      }
+    },
+    {
+      "id": "reach-us",
+      "type": "ReachUs",
+      "props": {
+        "title": "Visit & Reach Us",
+        "mapImage": "/assets/images/temples/dwarka_hero.png",
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14772.252763619927!2d68.96735821826123!3d22.23768109697063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39569c3ab7c4e9e5%3A0x31b7c3111df48f4!2sDwarkadhish%20Temple!5e0!3m2!1sen!2sin!4v1776253426812!5m2!1sen!2sin",
+        "address": "Dwarkadhish Temple Road, Dwarka, Gujarat 361335",
+        "contacts": [
+          {
+            "icon": "/assets/images/icons/general/phone.svg",
+            "value": "+91 2892 234 180"
+          },
+          {
+            "icon": "/assets/images/icons/general/email.svg",
+            "value": "info@dwarkadhish.org"
+          }
+        ],
+        "howToReach": [
+          {
+            "method": "By Air",
+            "detail": "Jamnagar (145 km) is the nearest airport."
+          },
+          {
+            "method": "By Rail",
+            "detail": "Dwarka Railway Station is well-connected to major cities."
+          },
+          {
+            "method": "By Road",
+            "detail": "Direct buses available from Ahmedabad, Rajkot, and Jamnagar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "Testimonials",
+      "props": {}
+    },
+    {
+      "id": "related-temples",
+      "type": "PopularTemples",
+      "props": {
+        "title": "Related Temples",
+        "subtitle": "Explore other revered temples in the region.",
+        "apiUrl": "http://localhost:8000/api/temples/popular"
+      }
+    }
+  ]
+}

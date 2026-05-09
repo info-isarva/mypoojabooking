@@ -1,0 +1,143 @@
+{
+  "title": "Policies & Agreements",
+  "slug": "/policies",
+  "seo": {
+    "metaTitle": "Policies & Agreements - BookMyPooja",
+    "description": "Read our privacy policy, terms of service, and cancellation guidelines."
+  },
+  "sections": [
+    {
+      "id": "legal-hero",
+      "type": "LegalHeroSection",
+      "props": {
+        "title": "Policies & Agreements",
+        "lastUpdated": "Last Updated: 9th August, 2023",
+        "backgroundImage": "/assets/images/legal-hero.png"
+      }
+    },
+    {
+      "id": "legal-content",
+      "type": "LegalContentSection",
+      "props": {
+        "sidebarTitle": "Legal Center",
+        "sidebarSubtitle": "POLICY & AGREEMENTS",
+        "navItems": [
+          { "id": "privacy", "label": "Privacy Policy", "icon": "Shield" },
+          { "id": "terms", "label": "Terms & Conditions", "icon": "FileText" },
+          { "id": "refund", "label": "Cancellation & Refund", "icon": "RefreshCcw" }
+        ],
+        "sections": [
+          {
+            "id": "privacy",
+            "title": "Privacy Policy",
+            "content": [
+              {
+                "type": "infoBoxes",
+                "title": "Information We Collect",
+                "description": "We collect information that you provide directly to us when you create an account, book a service, or communicate with us. This may include your name, email address, phone number, and puja-specific details like Gotra and Rashi.",
+                "boxes": [
+                  {
+                    "label": "DIRECT DATA",
+                    "items": ["Account Credentials", "Booking Requirements", "Communication Logs"]
+                  },
+                  {
+                    "label": "AUTOMATED DATA",
+                    "items": ["Device Information", "Usage Statistics", "IP Address & Location"]
+                  }
+                ]
+              },
+              {
+                "type": "textGrid",
+                "items": [
+                  {
+                    "title": "How We Use Your Information",
+                    "text": "Your data is primarily used to facilitate sacred services, connect you with verified Pandits, and personalize your devotional experience. We use it to manage bookings and provide support during ritual executions."
+                  },
+                  {
+                    "title": "Cookies & Tracking",
+                    "text": "We utilize essential cookies to maintain your session and security. Performance cookies help us understand how devotees interact with our sanctuary to improve overall flow."
+                  }
+                ]
+              },
+              {
+                "type": "highlightBox",
+                "title": "Data Sharing & Security",
+                "text": "We do not sell your personal sanctuary data. Information is only shared with assigned Pandits for service fulfillment and trusted payment gateways for financial transactions. We employ industry-standard encryption to protect your spiritual and personal data."
+              }
+            ]
+          },
+          {
+            "id": "terms",
+            "title": "Terms & Conditions",
+            "content": [
+              {
+                "type": "textBlock",
+                "title": "Platform Overview",
+                "text": "MyPoojaBooking acts as a bridge between devotees and learned Pandits. By using our Digital Sanctuary, you agree to these terms of service which govern the spiritual transactions within our ecosystem."
+              },
+              {
+                "type": "numberedList",
+                "items": [
+                  {
+                    "title": "User Eligibility & Conduct",
+                    "text": "You must be at least 18 years of age or possess legal parental consent. Users are expected to maintain the sanctity of the platform and interact with Pandits with traditional respect and decorum."
+                  },
+                  {
+                    "title": "Service Responsibility",
+                    "text": "While we vet our Pandits, the actual ritual execution is a service provided by the independent practitioner. MyPoojaBooking facilitates the discovery and booking process but is not the primary performer of the ritual."
+                  },
+                  {
+                    "title": "Payments & Liability",
+                    "text": "All payments must be made through the platform's secure gateways. Total liability is limited to the amount paid for the specific service in question."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "refund",
+            "title": "Cancellation & Refund",
+            "content": [
+              {
+                "type": "iconBoxes",
+                "items": [
+                  {
+                    "title": "General Policy",
+                    "icon": "FileText",
+                    "text": "We understand that circumstances change. Cancellations made 48 hours prior to the scheduled Muhurat will be eligible for a significant refund, minus platform processing fees."
+                  },
+                  {
+                    "title": "Rescheduling",
+                    "icon": "RefreshCcw",
+                    "text": "One rescheduling is permitted at no extra charge if requested 24 hours before the ritual. Subsequent rescheduling may incur a nominal fee of 15% of the booking value."
+                  }
+                ]
+              },
+              {
+                "type": "refundTable",
+                "title": "Refund Conditions",
+                "rows": [
+                  { "condition": "48+ Hours Before Service", "refund": "90% Refund" },
+                  { "condition": "24 - 48 Hours Before Service", "refund": "50% Refund" },
+                  { "condition": "Less than 24 Hours Before Service", "refund": "Non-Refundable", "variant": "danger" }
+                ],
+                "footer": "*Processing fees and bank charges (approx. 2-5%) are non-refundable in all payments as these are captured by financial intermediaries."
+              }
+            ]
+          }
+        ],
+        "contactBox": {
+          "title": "Contact & Grievances",
+          "description": "For any legal queries, policy clarifications, or grievance redressal, please reach out to our dedicated compliance officer.",
+          "officer": {
+            "label": "GRIEVANCE OFFICER",
+            "name": "Mr. Divakar Pai",
+            "role": "Compliance & User Rights",
+            "email": "legal@mypoojabooking.com",
+            "address": "Sector 4, Digital Enclave, Bengaluru - 560001"
+          }
+        }
+      }
+    }
+  ]
+}

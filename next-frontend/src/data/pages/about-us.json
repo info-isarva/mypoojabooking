@@ -1,0 +1,178 @@
+{
+  "title": "About Us",
+  "slug": "/about",
+  "seo": {
+    "metaTitle": "About MyPoojaBooking - India's Trusted Temple Booking Platform",
+    "description": "Learn about MyPoojaBooking, the authorised digital booking partner for temples across India. Our mission, temple network, and commitment to authentic seva."
+  },
+  "template": "StandardLayout",
+  "published": true,
+  "sections": [
+    {
+      "id": "about-hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "About MyPoojaBooking - Connecting",
+        "headlineAccent": "Devotees with Temples",
+        "subheadline": "India's trusted online pooja and seva booking platform, bringing the sacred traditions of India's holiest temples to your doorstep.",
+        "banner": "/assets/images/hero.png",
+        "ctas": [
+          {
+            "text": "JOIN NOW",
+            "link": "/login",
+            "variant": "primary"
+          }
+        ],
+        "footerText": "Authorised Booking Partner"
+      }
+    },
+    {
+      "id": "about-intro",
+      "type": "AboutIntroSection",
+      "props": {
+        "title": "Bridging Devotion and Technology",
+        "description": [
+          "MyPoojaBooking (mypoojabooking.com) is an authorised online seva and pooja booking platform based in Mangaluru, Karnataka, India. Founded by Kochikar Technologies LLP, it serves as the official digital booking partner of onboarded Hindu temples across India, enabling devotees to book temple sevas, access festival calendars, and stay connected with their chosen temples from anywhere in the world.",
+          "Unlike general pandit-booking platforms, MyPoojaBooking works directly with temple administrations, ensuring every booking is officially acknowledged by the temple. We leverage advanced cloud infrastructure to ensure that every ritual is authenticated, and every devotee can participate in seva regardless of where they are in the world."
+        ],
+        "stats": [
+          {
+            "label": "AUTHENTICATED TEMPLES",
+            "value": "500+"
+          },
+          {
+            "label": "RITUALS CONDUCTED",
+            "value": "1.2M+"
+          }
+        ],
+        "quote": "Where ancient tradition meets digital innovation.",
+        "image": "/assets/images/tech-bridge2.png"
+      }
+    },
+    {
+      "id": "about-stats",
+      "type": "ComplexStatsSection",
+      "props": {
+        "title": "A Growing Sanctuary of Temples",
+        "subtitle": "Partnering with historical institutions to preserve the sanctity of worship.",
+        "regionalGuardians": {
+          "title": "Regional Guardians",
+          "description": "Our network spans across 24 states, encompassing historical Shakti Peethas, Jyotirlingas, and local grama devatas.",
+          "linkText": "EXPLORE THE NETWORK →",
+          "image": "/assets/images/regional-gaurdian.png"
+        },
+        "devoteeCard": {
+          "value": "250,000+",
+          "description": "Active devotees engaged monthly in our digital temple community.",
+          "avatars": [
+            "/assets/images/icons/general/user-male.png",
+            "/assets/images/icons/general/user-female.png",
+            "/assets/images/icons/general/user-male.png"
+          ],
+          "avatarCount": "+12k"
+        },
+        "bottomStats": [
+          {
+            "label": "SATISFACTION RATE",
+            "value": "98%",
+            "description": "Verified through post-ritual feedback from our global community."
+          },
+          {
+            "label": "RITUAL VARIATIONS",
+            "value": "150+",
+            "description": "From simple Archanas to elaborate Maha Yagnas and Shanti Poojas."
+          },
+          {
+            "label": "GLOBAL ACCESS",
+            "value": "24/7",
+            "description": "Booking availability across all time zones with live support."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-trust",
+      "type": "TrustSection",
+      "props": {
+        "title": "Credibility in Every Prayer",
+        "subtitle": "We protect your spiritual journey with the same rigor we apply to traditional customs.",
+        "items": [
+          {
+            "icon": "ShieldCheck",
+            "title": "Authenticated Rituals",
+            "description": "Every pandit and temple is physically verified by our regional coordinators to ensure parampara is maintained."
+          },
+          {
+            "icon": "Banknote",
+            "title": "Secure Payments",
+            "description": "Enterprise-grade encryption for all transactions, ensuring Dakshina reaches the intended hands safely."
+          },
+          {
+            "icon": "LockKeyhole",
+            "title": "Data Privacy",
+            "description": "Your personal sankalp details and private information are protected by strict privacy protocols."
+          }
+        ]
+      }
+    },
+    {
+      "id": "about-benefits",
+      "type": "BenefitBoxesSection",
+      "props": {
+        "devotee": {
+          "tag": "EMPOWERING SEEKERS",
+          "title": "For Devotees",
+          "points": [
+            {
+              "title": "Intuitive Booking",
+              "description": "Schedule complex rituals in minutes via our streamlined mobile interface."
+            },
+            {
+              "title": "Live Darshan Access",
+              "description": "Join your ritual via high-definition streaming from the temple sanctum."
+            },
+            {
+              "title": "Digital Sankalp Records",
+              "description": "Maintain a spiritual timeline of your family's prayers and milestones."
+            }
+          ]
+        },
+        "partner": {
+          "tag": "TEMPLE MODERNIZATION",
+          "title": "For Temple Partners",
+          "points": [
+            {
+              "title": "Seva Management",
+              "description": "Automated scheduling and inventory tracking for ritual materials."
+            },
+            {
+              "title": "Financial Transparency",
+              "description": "Detailed reporting and direct reconciliation of all devotional offerings."
+            },
+            {
+              "title": "Global Outreach",
+              "description": "Connect your temple with the global diaspora of seekers."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "about-cta",
+      "type": "DarkCtaSection",
+      "props": {
+        "title": "Join Our Spiritual",
+        "titleAccent": "Ecosystem",
+        "subtitle": "Whether you are a devotee seeking divine connection or a temple guardian preserving heritage, we welcome you.",
+        "primaryCta": {
+          "text": "Start Your Booking",
+          "link": "/temples"
+        },
+        "secondaryCta": {
+          "text": "Partner With Us",
+          "link": "/temple-login"
+        }
+      }
+    }
+  ]
+}

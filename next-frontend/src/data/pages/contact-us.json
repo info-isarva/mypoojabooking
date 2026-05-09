@@ -1,0 +1,65 @@
+{
+  "title": "Contact Us",
+  "slug": "/contact",
+  "seo": {
+    "metaTitle": "Contact Us - BookMyPooja",
+    "description": "Get in touch with us for any queries or support regarding your spiritual journey and pooja bookings."
+  },
+  "template": "StandardLayout",
+  "published": true,
+  "sections": [
+    {
+      "id": "contact-hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "Connect with",
+        "headlineAccent": "Us",
+        "subheadline": "We are here to assist you on your spiritual journey. Every seeker's path is sacred to us.",
+        "banner": "/assets/images/contact.png"
+      }
+    },
+    {
+      "id": "contact-info",
+      "type": "ContactInfoSection",
+      "props": {
+        "items": [
+          {
+            "id": "phone",
+            "icon": "Phone",
+            "title": "Voice Support",
+            "value": "+91 7411575060",
+            "link": "tel:+917411575060"
+          },
+          {
+            "id": "email",
+            "icon": "Mail",
+            "title": "Digital Letter",
+            "value": "contact@mypoojabooking.com",
+            "link": "mailto:contact@mypoojabooking.com"
+          },
+          {
+            "id": "address",
+            "icon": "MapPin",
+            "title": "Address",
+            "value": "D. No. 1-1-2A (Part) Padav, Swasti Cashew Industries Compound, Off Airport Road, Padavinangadi, Mangaluru - 575 008. INDIA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact-form",
+      "type": "ContactFormSection",
+      "props": {
+        "title": "Get In Touch",
+        "subtitle": "Have a question or feedback? Send us a message and our team will be in touch shortly."
+      }
+    },
+    {
+      "id": "location-map",
+      "type": "MapSection",
+      "props": {
+        "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.324147493633!2d74.8624177750749!3d12.88686598742106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a5cd338c361%3A0x6431e5f03765e998!2sPadavinangadi%2C%20Mangaluru%2C%20Karnataka%20575008!5e0!3m2!1sen!2sin!4v1714385000000!5m2!1sen!2sin"
+      }
+    }
+  ]
+}

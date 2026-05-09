@@ -1,0 +1,105 @@
+{
+  "title": "Temple Partner",
+  "slug": "/temple-login",
+  "seo": {
+    "metaTitle": "Empower Your Temple's Digital Presence - BookMyPooja",
+    "description": "Join India's largest digital sanctuary and connect with millions of devotees seeking spiritual connection and divine blessings."
+  },
+  "template": "StandardLayout",
+  "published": true,
+  "sections": [
+    {
+      "id": "partner-hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "Empower Your Temple's",
+        "headlineAccent": "Digital Presence",
+        "subheadline": "Join India's largest digital sanctuary and connect with millions of devotees seeking spiritual connection and divine blessings.",
+        "banner": "/assets/images/faq-hero.png",
+        "ctas": [
+          {
+            "text": "PARTNER LOGIN",
+            "link": "/login",
+            "variant": "primary"
+          }
+        ],
+        "footerText": "Authorised Booking Partner"
+      }
+    },
+    {
+      "id": "digital-advantage",
+      "type": "FeatureGridSection",
+      "props": {
+        "tag": "THE DIGITAL ADVANTAGE",
+        "title": "Comprehensive Tools for the Modern Sanctuaries",
+        "items": [
+          {
+            "icon": "Globe",
+            "title": "Digital Presence",
+            "description": "A dedicated high-definition portal for your temple, showcasing history, rituals, and architecture to the world."
+          },
+          {
+            "icon": "Calendar",
+            "title": "Seva Management",
+            "description": "Effortlessly manage pooja schedules, priest availability, and daily rituals through our intuitive dashboard."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Real-time Reporting",
+            "description": "Gain insights into devotee demographics and booking trends with automated financial and operational reports."
+          },
+          {
+            "icon": "Monitor",
+            "title": "Kiosk Facility",
+            "description": "State-of-the-art on-premise hardware for instant bookings and information dissemination within temple premises."
+          }
+        ]
+      }
+    },
+    {
+      "id": "onboarding-journey",
+      "type": "JourneyProcessSection",
+      "props": {
+        "title": "Simple Onboarding Journey",
+        "subtitle": "Our streamlined process ensures your temple goes digital in record time without any technical hassles.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Register",
+            "description": "Submit basic temple details and institutional credentials through our portal."
+          },
+          {
+            "number": "02",
+            "title": "Verification",
+            "description": "Our spiritual committee reviews and verifies the temple's authenticity and documentation."
+          },
+          {
+            "number": "03",
+            "title": "Training",
+            "description": "Comprehensive hands-on training for the temple staff on using the Dharma Dashboard."
+          },
+          {
+            "number": "04",
+            "title": "Live",
+            "description": "Your temple is now open to millions of devotees across the globe for digital Sevas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "booking-kiosk",
+      "type": "BookingKiosk",
+      "props": {}
+    },
+    {
+      "id": "partner-form",
+      "type": "PartnerFormSection",
+      "props": {
+        "boxTitle": "Become a Partner",
+        "boxText": "Fill out this form and our representative will reach out to you within 48 hours for a detailed consultation.",
+        "phone": "+91 800 230 5000",
+        "email": "partnership@dharmanetwork.com"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "FAQ",
+  "slug": "/faq",
+  "seo": {
+    "metaTitle": "Frequently Asked Questions - Pooja Booking Help | MyPoojaBooking",
+    "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and Sankalpa details on MyPoojaBooking."
+  },
+  "sections": [
+    {
+      "id": "faq-hero",
+      "type": "FaqHeroSection",
+      "props": {
+        "tag": "DIVINE ASSISTANCE",
+        "title": "Frequently Asked Questions - Pooja Booking Help",
+        "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and Sankalpa details on MyPoojaBooking.",
+        "backgroundImage": "/assets/images/faq-hero.png"
+      }
+    },
+    {
+      "id": "faq-content",
+      "type": "FaqContentSection",
+      "props": {
+        "categories": [
+          {
+            "id": "booking",
+            "label": "Booking & Authenticity",
+            "icon": "ShieldCheck"
+          },
+          {
+            "id": "payments",
+            "label": "Payments & Security",
+            "icon": "CreditCard"
+          },
+          {
+            "id": "seva",
+            "label": "Seva Experience",
+            "icon": "Church"
+          },
+          {
+            "id": "prasadam",
+            "label": "Prasadam & Dispatch",
+            "icon": "Truck"
+          },
+          {
+            "id": "sankalpa",
+            "label": "Sankalpa & Receipts",
+            "icon": "FileText"
+          }
+        ],
+        "faqData": {
+          "booking": [
+            {
+              "question": "How does MyPoojaBooking work with temples?",
+              "answer": "MyPoojaBooking operates as an authorised booking partner for each onboarded temple. Every booking is directly transmitted to the temple administration. Devotees receive a unique Temple Transaction ID that can be verified at the temple counter."
+            },
+            {
+              "question": "Is physical presence required to book a seva?",
+              "answer": "Whether physical presence is required depends on the specific seva. Each seva listing on MyPoojaBooking clearly indicates whether the devotee must be physically present or whether the seva can be performed on their behalf remotely."
+            },
+            {
+              "question": "How are payments secured and what receipts are provided?",
+              "answer": "MyPoojaBooking ensures that all payments are processed through enterprise-grade encrypted gateways. Devotees receive an instant digital receipt, followed by an official temple receipt once the ritual is officially acknowledged by the temple administration."
+            },
+            {
+              "question": "What is the cancellation and refund process?",
+              "answer": "Cancellations on MyPoojaBooking are subject to the specific policies of the individual temple. Generally, once a Sankalpa has been performed, the seva cannot be cancelled. For all other cases, devotees can contact support for assistance with the refund process."
+            },
+            {
+              "question": "How is Prasadam dispatched and tracked?",
+              "answer": "Prasadam for sevas booked through MyPoojaBooking is carefully packed and dispatched via our authorised logistics partners. Devotees receive a tracking ID to monitor the delivery status directly to their provided address."
+            },
+            {
+              "question": "How are Sankalpa details like Gotra and Nakshatra handled?",
+              "answer": "Devotees can provide specific details including Gotra, Nakshatra, and family names during the booking process on MyPoojaBooking. These details are officially provided to the temple pandits to be included in the ritual Sankalpa."
+            }
+          ],
+          "payments": [
+            {
+              "question": "What payment methods are accepted?",
+              "answer": "We accept all major credit/debit cards, UPI, Net Banking, and popular digital wallets."
+            }
+          ]
+        },
+        "helpCard": {
+          "title": "Need more help?",
+          "description": "Our spiritual guides are available 24/7 for your assistance.",
+          "buttonText": "Contact Support",
+          "link": "/contact"
+        }
+      }
+    }
+  ]
+}

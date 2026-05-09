@@ -1,0 +1,87 @@
+{
+  "title": "Home",
+  "slug": "/",
+  "seo": {
+    "metaTitle": "Online Pooja Booking at Authorised Temples | MyPoojaBooking",
+    "description": "Book sacred poojas and sevas at India's most revered temples. Official digital booking partner for temples across India. Authentic, secure, trusted."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MyPoojaBooking",
+    "url": "https://mypoojabooking.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://mypoojabooking.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  "template": "StandardLayout",
+  "published": true,
+  "sections": [
+    {
+      "id": "hero",
+      "type": "HeroSection",
+      "props": {
+        "headline": "Online Pooja Booking at",
+        "headlineAccent": "Authorised Temples",
+        "subheadline": "Experience the divine traditions and seek blessings from the comfort of your home. Official digital booking partner for India's most revered temples.",
+        "ctaText": "Explore Popular Temples",
+        "ctaLink": "/temples"
+      }
+    },
+    {
+      "id": "popular-temples",
+      "type": "PopularTemples",
+      "props": {
+        "title": "Explore Popular Temples",
+        "subtitle": "Discover the most revered spiritual destinations.",
+        "apiUrl": "http://localhost:8000/api/temples/popular"
+      }
+    },
+    {
+      "id": "pooja-benefits",
+      "type": "PoojaBenefits",
+      "enabled": false,
+      "props": {}
+    },
+    {
+      "id": "special-events",
+      "type": "SpecialEvents",
+      "props": {}
+    },
+    {
+      "id": "process-flow",
+      "type": "ProcessFlow",
+      "props": {}
+    },
+    {
+      "id": "today-at-temple",
+      "type": "TodayAtTemple",
+      "props": {}
+    },
+    {
+      "id": "stats",
+      "type": "StatsSection",
+      "props": {}
+    },
+    {
+      "id": "bhajans",
+      "type": "BhajansSection",
+      "props": {}
+    },
+    {
+      "id": "testimonials",
+      "type": "Testimonials",
+      "props": {}
+    },
+    {
+      "id": "news-events",
+      "type": "NewsEvents",
+      "props": {}
+    }
+  ]
+}

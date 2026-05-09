@@ -1,0 +1,159 @@
+.section {
+  padding: 3.75rem 0;
+  background-color: #FCF9F4;
+  /* Light cream/beige from design */
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.imageCol {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-height: 650px;
+}
+
+.quoteBox {
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 280px;
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #4D080C;
+  /* Deep brownish/maroon */
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1rem;
+  color: #6B7280;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statValue {
+  font-size: 2.25rem;
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.statLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4B5563;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .imageCol {
+    order: 2;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contentCol {
+    order: 1;
+    text-align: center;
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .quoteBox {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.75rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,124 @@
+.section {
+  padding: 2.75rem 0 3.75rem 0;
+  background-color: #F8F5F0;
+  /* Soft beige background */
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 8rem;
+  /* align-items: center; */
+}
+
+.title {
+  font-size: 2.25rem;
+  font-family: var(--font-serif);
+  color: #C06B3E;
+  margin-bottom: 2.5rem;
+}
+
+.guidelinesList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.guideline {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.number {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #E46D11;
+  /* font-family: var(--font-serif); */
+  min-width: 25px;
+}
+
+.guidelineText {
+  font-size: 1.125rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+/* Partner Card */
+.partnerCard {
+  background-color: white;
+  padding: 3rem 3rem;
+  border-radius: 40px;
+  /* Highly rounded as in design */
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.02);
+}
+
+.partnerTitle {
+  font-size: 2.25rem;
+  font-family: var(--font-serif);
+  color: #C06B3E;
+  margin-bottom: 2rem;
+}
+
+.partnerDesc {
+  font-size: 1rem;
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mailIcon {
+  color: #E46D11;
+}
+
+.email {
+  font-size: 1.05rem;
+  color: #4B5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.registerBtn {
+  display: block;
+  text-align: center;
+  background-color: #E46D11;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 100px;
+  /* Pill shape */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.registerBtn:hover {
+  transform: translateY(-2px);
+  background-color: #D97706;
+  box-shadow: 0 10px 20px rgba(228, 109, 17, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .partnerCard {
+    max-width: 100%;
+    padding: 3rem 2rem;
+  }
+}

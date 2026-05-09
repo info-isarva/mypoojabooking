@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10rem 0 6rem;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-serif, serif);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.searchWrapper {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 100px;
+  padding: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.searchBar:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.searchIcon {
+  color: #6B7280;
+  margin-left: 1.5rem;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: #1F2937;
+  outline: none;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #9CA3AF;
+}
+
+.searchBtn {
+  background: #D97706;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 100px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.searchBtn:hover {
+  background: #B45309;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 4rem;
+    min-height: 100vh;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    padding: 0.75rem;
+    border-radius: 20px;
+    gap: 0.5rem;
+  }
+
+  .searchIcon {
+    display: none;
+  }
+
+  .searchInput {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #F3F4F6;
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+
+  .searchBtn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}

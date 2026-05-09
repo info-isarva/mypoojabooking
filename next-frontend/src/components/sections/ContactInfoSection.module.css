@@ -1,0 +1,96 @@
+.section {
+  padding: 3.75rem 0;
+  background-color: #FCF9F4;
+  /* Light cream/beige background from design */
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: baseline;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.iconWrapper {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.largeIcon {
+  width: 215px;
+  height: 215px;
+}
+
+.contactIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.value,
+.valueLink {
+  font-size: 1rem;
+  /* color: #4B5563; */
+  line-height: 1.6;
+  max-width: 320px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.valueLink:hover {
+  color: #E25E14;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .iconWrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .value,
+  .valueLink {
+    font-size: 1rem;
+  }
+}

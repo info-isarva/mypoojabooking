@@ -1,0 +1,19 @@
+DirectoryIndex dist/index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Ignore backend
+  RewriteCond %{REQUEST_URI} ^/backend/ [NC]
+  RewriteRule ^ - [L]
+
+  # Rewrite to dist if not already there
+  RewriteCond %{REQUEST_URI} !^/dist/ [NC]
+  RewriteRule ^(.*)$ dist/$1 [L]
+
+  # SPA fallback inside dist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^dist/(.*)$ dist/index.html [L]
+</IfModule>
