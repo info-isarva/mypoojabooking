@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://mypoojabooking.isarva.in'],
 
     'allowed_origins_patterns' => [],
 
