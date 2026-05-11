@@ -22,9 +22,21 @@
         "sidebarTitle": "Legal Center",
         "sidebarSubtitle": "POLICY & AGREEMENTS",
         "navItems": [
-          { "id": "privacy", "label": "Privacy Policy", "icon": "Shield" },
-          { "id": "terms", "label": "Terms & Conditions", "icon": "FileText" },
-          { "id": "refund", "label": "Cancellation & Refund", "icon": "RefreshCcw" }
+          {
+            "id": "privacy",
+            "label": "Privacy Policy",
+            "icon": "Shield"
+          },
+          {
+            "id": "terms",
+            "label": "Terms & Conditions",
+            "icon": "FileText"
+          },
+          {
+            "id": "refund",
+            "label": "Cancellation & Refund",
+            "icon": "RefreshCcw"
+          }
         ],
         "sections": [
           {
@@ -38,11 +50,19 @@
                 "boxes": [
                   {
                     "label": "DIRECT DATA",
-                    "items": ["Account Credentials", "Booking Requirements", "Communication Logs"]
+                    "items": [
+                      "Account Credentials",
+                      "Booking Requirements",
+                      "Communication Logs"
+                    ]
                   },
                   {
                     "label": "AUTOMATED DATA",
-                    "items": ["Device Information", "Usage Statistics", "IP Address & Location"]
+                    "items": [
+                      "Device Information",
+                      "Usage Statistics",
+                      "IP Address & Location"
+                    ]
                   }
                 ]
               },
@@ -117,9 +137,19 @@
                 "type": "refundTable",
                 "title": "Refund Conditions",
                 "rows": [
-                  { "condition": "48+ Hours Before Service", "refund": "90% Refund" },
-                  { "condition": "24 - 48 Hours Before Service", "refund": "50% Refund" },
-                  { "condition": "Less than 24 Hours Before Service", "refund": "Non-Refundable", "variant": "danger" }
+                  {
+                    "condition": "48+ Hours Before Service",
+                    "refund": "90% Refund"
+                  },
+                  {
+                    "condition": "24 - 48 Hours Before Service",
+                    "refund": "50% Refund"
+                  },
+                  {
+                    "condition": "Less than 24 Hours Before Service",
+                    "refund": "Non-Refundable",
+                    "variant": "danger"
+                  }
                 ],
                 "footer": "*Processing fees and bank charges (approx. 2-5%) are non-refundable in all payments as these are captured by financial intermediaries."
               }

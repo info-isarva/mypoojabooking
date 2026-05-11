@@ -3,7 +3,7 @@
 import { Search } from 'lucide-react';
 import { useFilter } from '../../context/FilterContext';
 import styles from './TempleListingHero.module.css';
-const heroImg = '/assets/images/hero.png';
+const heroImg = '/assets/images/hero.webp';
 
 export default function TempleListingHero({ data = {} }) {
   const { templeSearchQuery, setTempleSearchQuery } = useFilter();
@@ -21,7 +21,7 @@ export default function TempleListingHero({ data = {} }) {
         <div className={styles.content}>
           <h1 className={styles.title}>{headline}</h1>
           <p className={styles.subtitle}>{subheadline}</p>
-          
+
           <div className={styles.searchWrapper}>
             <div className={styles.searchBar}>
               <Search className={styles.searchIcon} size={20} />

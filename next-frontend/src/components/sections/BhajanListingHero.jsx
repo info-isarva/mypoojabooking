@@ -8,7 +8,7 @@ export default function BhajanListingHero({ data = {} }) {
   const {
     headline = 'Bhajans & Stotras',
     subheadline = 'Immerse yourself in divine vibrations with our curated collection.',
-    banner = '/assets/images/bajanas/hero.png',
+    banner = '/assets/images/bajanas/hero.webp',
     placeholder = 'Search by bhajan, stotra or deity...'
   } = data;
 
@@ -19,7 +19,7 @@ export default function BhajanListingHero({ data = {} }) {
         <div className={styles.content}>
           <h1 className={styles.title}>{headline}</h1>
           <p className={styles.subtitle}>{subheadline}</p>
-          
+
           <div className={styles.searchWrapper}>
             <div className={styles.searchBar}>
               <Search className={styles.searchIcon} size={20} />

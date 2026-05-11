@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './HeroSection.module.css';
 
-const heroImg = '/assets/images/hero.png';
+const heroImg = '/assets/images/hero.webp';
 
 export default function HeroSection({ data = {} }) {
   const {
@@ -11,11 +11,11 @@ export default function HeroSection({ data = {} }) {
     banner = heroImg,
     ctaText,
     ctaLink = '/#',
-    ctas = [], 
+    ctas = [],
   } = data;
 
-  const normalizedCtas = ctas.length > 0 
-    ? ctas 
+  const normalizedCtas = ctas.length > 0
+    ? ctas
     : (ctaText ? [{ text: ctaText, link: ctaLink, type: 'primary' }] : []);
 
   return (
@@ -27,13 +27,13 @@ export default function HeroSection({ data = {} }) {
             {headline} <span className={styles.accent}>{headlineAccent}</span>
           </h1>
           <p className={styles.subtitle}>{subheadline}</p>
-          
+
           {normalizedCtas.length > 0 && (
             <div className={styles.buttonGroup}>
               {normalizedCtas.map((cta, index) => (
-                <Link 
-                  key={index} 
-                  href={cta.link} 
+                <Link
+                  key={index}
+                  href={cta.link}
                   className={`${styles.ctaButton} ${styles[cta.variant || 'primary']}`}
                 >
                   {cta.text}
