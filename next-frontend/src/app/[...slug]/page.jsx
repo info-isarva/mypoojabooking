@@ -40,7 +40,11 @@ function fixUrl(url) {
 
 function getPageData(slugArray) {
   const path = slugArray ? `/${slugArray.join('/')}` : "/";
-  const data = PAGE_REGISTRY[path];
+  const rawData = PAGE_REGISTRY[path];
+  if (!rawData) return null;
+
+  // Deep clone to avoid mutating the imported JSON module cache
+  const data = JSON.parse(JSON.stringify(rawData));
   
   if (data && data.sections) {
     // Dynamically fix URLs in section props
