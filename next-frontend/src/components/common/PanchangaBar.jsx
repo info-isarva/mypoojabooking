@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
+import { API_URL } from '@/utils/api';
 import styles from './PanchangaBar.module.css';
 
 export default function PanchangaBar({ 
-  apiUrl = 'http://localhost:8000/api/panchanga',
+  apiUrl = `${API_URL}/panchanga`,
   serverData = null 
 }) {
   const [data, setData] = useState(serverData);

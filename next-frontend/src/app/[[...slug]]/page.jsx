@@ -3,6 +3,7 @@ import { FilterProvider } from "@/context/FilterContext";
 import { notFound } from "next/navigation";
 import { preload } from 'react-dom';
 import AnalyticsTracker from "@/components/utils/AnalyticsTracker";
+import { API_URL } from "@/utils/api";
 
 // Data imports
 import homeData from "@/data/pages/home.json";
@@ -29,9 +30,35 @@ const PAGE_REGISTRY = {
   "/temples": templesData,
 };
 
+function fixUrl(url) {
+  if (!url || typeof url !== 'string') return url;
+  if (url.includes('localhost:8000/api')) {
+    return url.replace('http://localhost:8000/api', API_URL);
+  }
+  return url;
+}
+
 function getPageData(slugArray) {
   const path = slugArray ? `/${slugArray.join('/')}` : "/";
-  return PAGE_REGISTRY[path];
+  const data = PAGE_REGISTRY[path];
+  
+  if (data && data.sections) {
+    // Dynamically fix URLs in section props
+    data.sections = data.sections.map(section => {
+      if (section.props && section.props.apiUrl) {
+        return {
+          ...section,
+          props: {
+            ...section.props,
+            apiUrl: fixUrl(section.props.apiUrl)
+          }
+        };
+      }
+      return section;
+    });
+  }
+  
+  return data;
 }
 
 export async function generateMetadata({ params }) {
@@ -70,7 +97,7 @@ async function fetchServerData(pageData) {
     
     if (section.type === 'TodayAtTemple' || section.type === 'AboutTemple') {
       try {
-        const res = await fetch('http://localhost:8000/api/panchanga', { next: { revalidate: 3600 } });
+        const res = await fetch(`${API_URL}/panchanga`, { next: { revalidate: 3600 } });
         if (res.ok) {
           const panchangaData = await res.json();
           return { ...section, props: { ...section.props, panchangaData } };
@@ -126,3 +153,4 @@ export default async function Page({ params }) {
     </FilterProvider>
   );
 }
+

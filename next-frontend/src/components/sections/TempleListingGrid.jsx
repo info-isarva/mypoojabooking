@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { MapPin } from 'lucide-react';
 import { useFilter } from '../../context/FilterContext';
+import { API_URL } from '@/utils/api';
 import styles from './TempleListingGrid.module.css';
 import EmptyStateSection from './EmptyStateSection';
 
@@ -24,7 +25,7 @@ export default function TempleListingGrid({ data = {} }) {
   const [error, setError] = useState(null);
 
   const {
-    apiUrl = 'http://localhost:8000/api/temples',
+    apiUrl = `${API_URL}/temples`,
     loadMoreIncrement = 9
   } = data;
 
