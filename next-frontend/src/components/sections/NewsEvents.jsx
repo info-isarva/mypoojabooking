@@ -18,32 +18,32 @@ const news = [
 ];
 
 const upcoming = [
-  { 
-    day: '14', 
-    month: 'FEB', 
-    title: 'Vasant Panchami', 
-    subtitle: 'Saraswati pooja at Sharda Peeth',
-    theme: 'orange'
-  },
-  { 
-    day: '08', 
-    month: 'MAR', 
-    title: 'Maha Shivratri', 
-    subtitle: 'Night Vigil across 12 Jyotirlingas',
+  {
+    day: '17',
+    month: 'AUG',
+    title: 'Nag Panchami',
+    subtitle: 'Traditional Snake Deity Worship',
     theme: 'green'
   },
-  { 
-    day: '25', 
-    month: 'MAR', 
-    title: 'Holi Mahotsav', 
-    subtitle: 'Braj Ki Holi Celebrations',
+  {
+    day: '28',
+    month: 'AUG',
+    title: 'Varalakshmi Vrat',
+    subtitle: 'Vrata for Goddess Lakshmi blessings',
     theme: 'orange'
   },
-  { 
-    day: '25', 
-    month: 'MAR', 
-    title: 'Holi Mahotsav', 
-    subtitle: 'Braj Ki Holi Celebrations',
+  {
+    day: '04',
+    month: 'SEP',
+    title: 'Krishna Janmashtami',
+    subtitle: 'Divine Birthday Celebrations',
+    theme: 'green'
+  },
+  {
+    day: '14',
+    month: 'SEP',
+    title: 'Ganesh Chaturthi',
+    subtitle: 'Grand Ganesha Welcoming Rituals',
     theme: 'orange'
   }
 ];
@@ -94,7 +94,7 @@ export default function NewsEvents() {
               </div>
               
               <div className={styles.cardFooter}>
-                <a href="#calendar" className={styles.calendarLink}>
+                <a href="/festivals" className={styles.calendarLink}>
                   See Full Festival Calendar
                 </a>
               </div>

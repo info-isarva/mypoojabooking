@@ -76,17 +76,65 @@ export async function generateMetadata({ params }) {
     ? pageData.seo.metaTitle 
     : `${pageData.seo.metaTitle}${brand}`;
 
+  const canonicalUrl = `https://mypoojabooking.com${pageData.slug || ''}`;
+  
+  let image = 'https://mypoojabooking.com/assets/images/hero.webp';
+  if (pageData.schema) {
+    const schemas = Array.isArray(pageData.schema) ? pageData.schema : [pageData.schema];
+    const imageSchema = schemas.find(s => s.image);
+    if (imageSchema && typeof imageSchema.image === 'string') {
+      image = imageSchema.image;
+    }
+  }
+  const heroSection = pageData.sections?.find(s => s.type === 'HeroSection' || s.type === 'TempleListingHero');
+  if (heroSection?.props?.banner && image === 'https://mypoojabooking.com/assets/images/hero.webp') {
+    image = heroSection.props.banner.startsWith('http') 
+      ? heroSection.props.banner 
+      : `https://mypoojabooking.com${heroSection.props.banner}`;
+  }
+
   return {
     title,
     description: pageData.seo.description,
     alternates: {
-      canonical: `https://mypoojabooking.com${pageData.slug}`,
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description: pageData.seo.description,
+      url: canonicalUrl,
+      siteName: 'MyPoojaBooking',
+      locale: 'en_IN',
+      type: 'website',
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: title
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: pageData.seo.description,
+      images: [image],
     }
   };
 }
 
 async function fetchServerData(pageData) {
   const updatedSections = await Promise.all(pageData.sections.map(async (section) => {
+    if (section.type === 'TempleListingGrid') {
+      try {
+        const templesJson = require('@/data/temples.json');
+        return { ...section, props: { ...section.props, initialTemples: templesJson } };
+      } catch (e) {
+        console.error('Failed to load local static temples:', e);
+      }
+    }
+
     if (section.type === 'PopularTemples' && section.props.apiUrl) {
       try {
         const res = await fetch(section.props.apiUrl, { next: { revalidate: 3600 } });

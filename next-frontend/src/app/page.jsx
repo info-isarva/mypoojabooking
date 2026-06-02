@@ -51,6 +51,28 @@ export async function generateMetadata() {
     description: pageData.seo.description,
     alternates: {
       canonical: `https://mypoojabooking.com/`,
+    },
+    openGraph: {
+      title,
+      description: pageData.seo.description,
+      url: 'https://mypoojabooking.com/',
+      siteName: 'MyPoojaBooking',
+      locale: 'en_IN',
+      type: 'website',
+      images: [
+        {
+          url: 'https://mypoojabooking.com/assets/images/hero.webp',
+          width: 1200,
+          height: 630,
+          alt: 'MyPoojaBooking'
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: pageData.seo.description,
+      images: ['https://mypoojabooking.com/assets/images/hero.webp'],
     }
   };
 }

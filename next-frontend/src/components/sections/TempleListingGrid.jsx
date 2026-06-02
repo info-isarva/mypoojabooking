@@ -19,17 +19,23 @@ const imageMap = {
 
 export default function TempleListingGrid({ data = {} }) {
   const { templeSearchQuery } = useFilter();
-  const [temples, setTemples] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(9);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
   const {
     apiUrl = `${API_URL}/temples`,
-    loadMoreIncrement = 9
+    loadMoreIncrement = 9,
+    initialTemples = []
   } = data;
 
+  const [temples, setTemples] = useState(initialTemples);
+  const [visibleCount, setVisibleCount] = useState(9);
+  const [loading, setLoading] = useState(initialTemples.length === 0);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
+    if (initialTemples && initialTemples.length > 0) {
+      setTemples(initialTemples);
+      setLoading(false);
+      return;
+    }
     const fetchTemples = async () => {
       setLoading(true);
       try {
@@ -44,7 +50,7 @@ export default function TempleListingGrid({ data = {} }) {
       }
     };
     fetchTemples();
-  }, [apiUrl]);
+  }, [apiUrl, initialTemples]);
 
   const filteredTemples = useMemo(() => {
     if (!templeSearchQuery) return temples;

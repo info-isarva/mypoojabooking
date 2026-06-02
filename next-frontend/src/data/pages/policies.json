@@ -2,7 +2,7 @@
   "title": "Policies & Agreements",
   "slug": "/policies",
   "seo": {
-    "metaTitle": "Policies & Agreements - BookMyPooja",
+    "metaTitle": "Policies & Agreements",
     "description": "Read our privacy policy, terms of service, and cancellation guidelines."
   },
   "sections": [
@@ -11,7 +11,7 @@
       "type": "LegalHeroSection",
       "props": {
         "title": "Policies & Agreements",
-        "lastUpdated": "Last Updated: 9th August, 2023",
+        "lastUpdated": "Last Updated: 2nd June, 2026",
         "backgroundImage": "/assets/images/legal-hero.png"
       }
     },
@@ -163,8 +163,8 @@
             "label": "GRIEVANCE OFFICER",
             "name": "Mr. Divakar Pai",
             "role": "Compliance & User Rights",
-            "email": "legal@mypoojabooking.com",
-            "address": "Sector 4, Digital Enclave, Bengaluru - 560001"
+            "email": "contact@mypoojabooking.com",
+            "address": "D. No. 1-1-2A (Part) Padav, Swasti Cashew Industries Compound, Off Airport Road, Padavinangadi, Mangaluru - 575 008. INDIA"
           }
         }
       }

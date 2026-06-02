@@ -36,6 +36,11 @@ export const metadata = {
     locale: 'en_IN',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Online Pooja Booking at Authorised Temples | MyPoojaBooking",
+    description: "Book sacred poojas and sevas at India's most revered temples.",
+  },
 };
 
 export default function RootLayout({ children }) {

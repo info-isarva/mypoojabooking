@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import styles from './LegalContentSection.module.css';
 import { Shield, FileText, RefreshCcw, Mail, MapPin } from 'lucide-react';
 
@@ -9,16 +8,18 @@ const ICONS = { Shield, FileText, RefreshCcw, Mail, MapPin };
 
 function LegalContent({ data }) {
   const { sidebarTitle, sidebarSubtitle, navItems = [], sections = [], contactBox = {} } = data;
-  const searchParams = useSearchParams();
-  const sectionParam = searchParams.get('section');
 
   const [activeSection, setActiveSection] = useState(navItems[0]?.id);
 
   useEffect(() => {
-    if (sectionParam && navItems.some(item => item.id === sectionParam)) {
-      setActiveSection(sectionParam);
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const sectionParam = params.get('section');
+      if (sectionParam && navItems.some(item => item.id === sectionParam)) {
+        setActiveSection(sectionParam);
+      }
     }
-  }, [sectionParam, navItems]);
+  }, [navItems]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -123,8 +124,6 @@ function LegalContent({ data }) {
     });
   };
 
-  const activeContent = sections.find(s => s.id === activeSection);
-
   return (
     <div className={styles.layout}>
       <aside className={styles.sidebar}>
@@ -150,10 +149,17 @@ function LegalContent({ data }) {
       </aside>
 
       <div className={styles.contentArea}>
-        <h2 className={styles.mainHeading}>{activeContent?.title}</h2>
-        <div className={styles.contentBody}>
-          {activeContent && renderContent(activeContent.content)}
-        </div>
+        {sections.map((sec) => (
+          <div
+            key={sec.id}
+            style={{ display: activeSection === sec.id ? 'block' : 'none' }}
+          >
+            <h2 className={styles.mainHeading}>{sec.title}</h2>
+            <div className={styles.contentBody}>
+              {renderContent(sec.content)}
+            </div>
+          </div>
+        ))}
 
         {contactBox && (
           <div className={styles.contactGrievance}>
@@ -191,9 +197,7 @@ export default function LegalContentSection({ data = {} }) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LegalContent data={data} />
-        </Suspense>
+        <LegalContent data={data} />
       </div>
     </section>
   );

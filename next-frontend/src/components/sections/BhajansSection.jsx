@@ -7,19 +7,19 @@ const items = [
   {
     title: 'Hanuman Chalisa',
     image: imgHanumanchalisa,
-    tag: 'UJJAIN SPECIAL',
+    tag: 'PEACEFUL MANTRAS',
     btnText: 'READ NOW'
   },
   {
     title: 'Lalitha Sahasranamam',
     image: imgLalithasahasranamam,
-    tag: 'CHADHAVA AT HANDPICKED SHRINES',
+    tag: 'DEVI STOTRAS',
     btnText: 'READ NOW'
   },
   {
     title: 'Vishnu Sahasranamam',
     image: imgVishnusahasranamam,
-    tag: 'FAMILY & LIFE PUJAS',
+    tag: 'VISHNU BHAJANS',
     btnText: 'LISTEN NOW'
   }
 ];

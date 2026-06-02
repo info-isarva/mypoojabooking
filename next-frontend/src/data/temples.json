@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Dwarkadhish Temple",
+    "slug": "dwarkadhish",
+    "location": "Dwarka, Gujarat",
+    "image": "temple_somnath.png",
+    "description": "Dwarka is one of the holiest sites in India, part of the Char Dham pilgrimage.",
+    "tags": ["Pooja", "Prasad", "Darshan"]
+  },
+  {
+    "id": 2,
+    "name": "Kedarnath Temple",
+    "slug": "kedarnath",
+    "location": "Kedarnath, Uttarakhand",
+    "image": "temple_kedarnath.png",
+    "description": "One of the twelve Jyotirlingas, dedicated to Lord Shiva in the Himalayas.",
+    "tags": ["Pooja", "Prasad", "Darshan"]
+  },
+  {
+    "id": 3,
+    "name": "Mangalnath Temple",
+    "slug": "mangalnath",
+    "location": "Ujjain, Madhya Pradesh",
+    "image": "temple_mahakal.png",
+    "description": "Dedicated to Lord Shiva, believed to be the birthplace of Mars.",
+    "tags": ["Pooja", "Prasad", "Photography"]
+  },
+  {
+    "id": 4,
+    "name": "Kashi Vishwanath",
+    "slug": "kashi-vishwanath",
+    "location": "Varanasi, Uttar Pradesh",
+    "image": "temple_kashi.png",
+    "description": "One of the most famous Hindu temples dedicated to Lord Shiva.",
+    "tags": ["Pooja", "Aarti", "Darshan"]
+  },
+  {
+    "id": 5,
+    "name": "Tirumala Tirupati",
+    "slug": "tirupati",
+    "location": "Tirupati, Andhra Pradesh",
+    "image": "temple_tirupati.png",
+    "description": "The world's richest temple, dedicated to Lord Venkateswara.",
+    "tags": ["Seva", "Prasad", "Darshan"]
+  },
+  {
+    "id": 6,
+    "name": "Jagannath Puri",
+    "slug": "jagannath-puri",
+    "location": "Puri, Odisha",
+    "image": "temple_jagannath.png",
+    "description": "Famous for its annual Ratha Yatra and the deity Jagannath.",
+    "tags": ["Mahaprasad", "Rath Yatra"]
+  },
+  {
+    "id": 7,
+    "name": "Meenakshi Amman Temple",
+    "slug": "meenakshi-amman",
+    "location": "Madurai, Tamil Nadu",
+    "image": "temple_somnath.png",
+    "description": "A historic Hindu temple located on the southern bank of the Vaigai River.",
+    "tags": ["Architecture", "Darshan", "History"]
+  },
+  {
+    "id": 8,
+    "name": "Badrinath Temple",
+    "slug": "badrinath",
+    "location": "Badrinath, Uttarakhand",
+    "image": "temple_kedarnath.png",
+    "description": "One of the Char Dham and Chota Char Dham pilgrimage sites.",
+    "tags": ["Vishnu", "Pooja", "Himalayas"]
+  },
+  {
+    "id": 9,
+    "name": "Somnath Temple",
+    "slug": "somnath",
+    "location": "Veraval, Gujarat",
+    "image": "temple_somnath.png",
+    "description": "The first among the twelve Jyotirlinga shrines of Shiva.",
+    "tags": ["Jyotirlinga", "Aarti", "Sea View"]
+  },
+  {
+    "id": 10,
+    "name": "Vaishno Devi",
+    "slug": "vaishno-devi",
+    "location": "Katra, Jammu & Kashmir",
+    "image": "temple_kedarnath.png",
+    "description": "A holy cave temple dedicated to Goddess Vaishno Devi.",
+    "tags": ["Trekking", "Shakti", "Blessings"]
+  },
+  {
+    "id": 11,
+    "name": "Amarnath Temple",
+    "slug": "amarnath",
+    "location": "Anantnag, Jammu & Kashmir",
+    "image": "temple_kedarnath.png",
+    "description": "Famous for the natural ice lingam that forms inside the cave.",
+    "tags": ["Cave", "Shiva", "Yatra"]
+  },
+  {
+    "id": 12,
+    "name": "Shirdi Sai Baba",
+    "slug": "shirdi-sai-baba",
+    "location": "Shirdi, Maharashtra",
+    "image": "temple_mahakal.png",
+    "description": "Dedicated to Sai Baba, a spiritual master who taught love and forgiveness.",
+    "tags": ["Peace", "Prasad", "Faith"]
+  },
+  {
+    "id": 13,
+    "name": "Rameshwaram Temple",
+    "slug": "rameshwaram",
+    "location": "Rameshwaram, Tamil Nadu",
+    "image": "temple_somnath.png",
+    "description": "One of the twelve Jyotirlingas, where Lord Rama prayed to Shiva.",
+    "tags": ["Jyotirlinga", "Island", "Pooja"]
+  },
+  {
+    "id": 14,
+    "name": "Golden Temple",
+    "slug": "golden-temple",
+    "location": "Amritsar, Punjab",
+    "image": "temple_kashi.png",
+    "description": "The preeminent spiritual site of Sikhism, known for its gold-covered dome.",
+    "tags": ["Langar", "Peace", "Sikhism"]
+  },
+  {
+    "id": 15,
+    "name": "Siddhivinayak Temple",
+    "slug": "siddhivinayak",
+    "location": "Mumbai, Maharashtra",
+    "image": "temple_mahakal.png",
+    "description": "Dedicated to Lord Ganesha, the remover of obstacles.",
+    "tags": ["Ganesha", "Pooja", "Mumbai"]
+  },
+  {
+    "id": 16,
+    "name": "Kamakhya Temple",
+    "slug": "kamakhya",
+    "location": "Guwahati, Assam",
+    "image": "temple_jagannath.png",
+    "description": "A major Shakti Peeth dedicated to the mother goddess Kamakhya.",
+    "tags": ["Shakti", "Peeth", "History"]
+  },
+  {
+    "id": 17,
+    "name": "Brihadeeswara Temple",
+    "slug": "brihadeeswara",
+    "location": "Thanjavur, Tamil Nadu",
+    "image": "temple_somnath.png",
+    "description": "A Chola dynasty masterpiece and UNESCO World Heritage Site.",
+    "tags": ["Chola", "UNESCO", "Architecture"]
+  },
+  {
+    "id": 18,
+    "name": "Lingaraja Temple",
+    "slug": "lingaraja",
+    "location": "Bhubaneswar, Odisha",
+    "image": "temple_jagannath.png",
+    "description": "The largest temple in the \"Temple City\" of India.",
+    "tags": ["Shiva", "Odisha", "Ancient"]
+  },
+  {
+    "id": 19,
+    "name": "Padmanabhaswamy Temple",
+    "slug": "padmanabhaswamy",
+    "location": "Thiruvananthapuram, Kerala",
+    "image": "temple_tirupati.png",
+    "description": "Known for its architectural beauty and hidden treasures.",
+    "tags": ["Wealth", "Vishnu", "Kerala"]
+  },
+  {
+    "id": 20,
+    "name": "Khajuraho Temples",
+    "slug": "khajuraho",
+    "location": "Khajuraho, Madhya Pradesh",
+    "image": "temple_mahakal.png",
+    "description": "Famous for their nagara-style architectural symbolism.",
+    "tags": ["Sculpture", "History", "UNESCO"]
+  },
+  {
+    "id": 21,
+    "name": "Lotus Temple",
+    "slug": "lotus-temple",
+    "location": "New Delhi",
+    "image": "temple_kashi.png",
+    "description": "A Baháʼí House of Worship known for its flowerlike shape.",
+    "tags": ["Modern", "Peace", "Delhi"]
+  },
+  {
+    "id": 22,
+    "name": "Akshardham Temple",
+    "slug": "akshardham",
+    "location": "Delhi",
+    "image": "temple_kashi.png",
+    "description": "A spiritual-cultural campus displaying Hindu culture and spirituality.",
+    "tags": ["Culture", "Exhibition", "Grand"]
+  },
+  {
+    "id": 23,
+    "name": "Sabarimala Temple",
+    "slug": "sabarimala",
+    "location": "Pathanamthitta, Kerala",
+    "image": "temple_tirupati.png",
+    "description": "Dedicated to Lord Ayyappa, located atop a mountain.",
+    "tags": ["Ayyappa", "Trekking", "Devotion"]
+  },
+  {
+    "id": 24,
+    "name": "Dakshineswar Kali Temple",
+    "slug": "dakshineswar-kali",
+    "location": "Kolkata, West Bengal",
+    "image": "temple_kashi.png",
+    "description": "A famous Kali temple where Ramakrishna Paramahamsa was a priest.",
+    "tags": ["Kali", "Ganges", "Bhakti"]
+  },
+  {
+    "id": 25,
+    "name": "Kanyakumari Temple",
+    "slug": "kanyakumari",
+    "location": "Kanyakumari, Tamil Nadu",
+    "image": "temple_somnath.png",
+    "description": "Located at the southern tip of India, dedicated to Devi Kanya Kumari.",
+    "tags": ["Ocean", "Devi", "Sunset"]
+  },
+  {
+    "id": 26,
+    "name": "Yamunotri Temple",
+    "slug": "yamunotri",
+    "location": "Yamunotri, Uttarakhand",
+    "image": "temple_kedarnath.png",
+    "description": "The seat of Goddess Yamuna and the source of the Yamuna River.",
+    "tags": ["River", "Chota Char Dham", "Glacier"]
+  },
+  {
+    "id": 27,
+    "name": "Gangotri Temple",
+    "slug": "gangotri",
+    "location": "Gangotri, Uttarakhand",
+    "image": "temple_kedarnath.png",
+    "description": "The seat of Goddess Ganga and the source of the Ganges River.",
+    "tags": ["Ganga", "Holy", "Glacier"]
+  },
+  {
+    "id": 28,
+    "name": "Guruvayur Temple",
+    "slug": "guruvayur",
+    "location": "Guruvayur, Kerala",
+    "image": "temple_tirupati.png",
+    "description": "A famous Krishna temple known as the Dwarka of South India.",
+    "tags": ["Krishna", "Kerala", "Elephant"]
+  },
+  {
+    "id": 29,
+    "name": "Pashupatinath Temple",
+    "slug": "pashupatinath",
+    "location": "Kathmandu (Nepal Border)",
+    "image": "temple_kedarnath.png",
+    "description": "One of the most sacred Shiva temples on the banks of Bagmati River.",
+    "tags": ["Shiva", "Sacred", "Ancient"]
+  },
+  {
+    "id": 30,
+    "name": "Murudeshwar Temple",
+    "slug": "murudeshwar",
+    "location": "Murudeshwar, Karnataka",
+    "image": "temple_somnath.png",
+    "description": "Famous for the world's second tallest Shiva statue.",
+    "tags": ["Shiva", "Sea", "Tall Statue"]
+  }
+]
