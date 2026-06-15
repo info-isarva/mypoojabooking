@@ -66,22 +66,34 @@ function LegalContent({ data }) {
         case 'textBlock':
           return (
             <div key={idx} className={styles.textBlock}>
-              <h3 className={styles.sectionHeading}>{block.title}</h3>
-              <p className={styles.text}>{block.text}</p>
+              {block.title && <h3 className={styles.sectionHeading}>{block.title}</h3>}
+              {block.html ? (
+                <div className={styles.text} dangerouslySetInnerHTML={{ __html: block.html }} />
+              ) : (
+                <p className={styles.text}>{block.text}</p>
+              )}
             </div>
           );
         case 'numberedList':
           return (
             <div key={idx} className={styles.numberedList}>
-              {block.items.map((item, iIdx) => (
-                <div key={iIdx} className={styles.listItem}>
-                  <span className={styles.number}>0{iIdx + 1}</span>
-                  <div className={styles.listContent}>
-                    <h4 className={styles.listTitle}>{item.title}</h4>
-                    <p className={styles.text}>{item.text}</p>
+              {block.items.map((item, iIdx) => {
+                const numVal = iIdx + 1;
+                const displayNum = numVal < 10 ? `0${numVal}` : `${numVal}`;
+                return (
+                  <div key={iIdx} className={styles.listItem}>
+                    <span className={styles.number}>{displayNum}</span>
+                    <div className={styles.listContent}>
+                      <h4 className={styles.listTitle}>{item.title}</h4>
+                      {item.html ? (
+                        <div className={styles.text} dangerouslySetInnerHTML={{ __html: item.html }} />
+                      ) : (
+                        <p className={styles.text}>{item.text}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           );
         case 'iconBoxes':

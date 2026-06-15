@@ -1,0 +1,77 @@
+{
+  "title": "Cookie Policy",
+  "slug": "/cookie-policy",
+  "seo": {
+    "metaTitle": "Cookie Policy",
+    "description": "Read our Cookie Policy to understand how we use cookies and tracking technologies."
+  },
+  "sections": [
+    {
+      "id": "legal-hero",
+      "type": "LegalHeroSection",
+      "props": {
+        "title": "Cookie Policy",
+        "lastUpdated": "Last Revised: 09th August 2023",
+        "backgroundImage": "/assets/images/legal-hero.png"
+      }
+    },
+    {
+      "id": "legal-content",
+      "type": "LegalContentSection",
+      "props": {
+        "sidebarTitle": "Legal Center",
+        "sidebarSubtitle": "COOKIE POLICY",
+        "navItems": [
+          {
+            "id": "cookie-policy",
+            "label": "Cookie Policy",
+            "icon": "Shield"
+          }
+        ],
+        "sections": [
+          {
+            "id": "cookie-policy",
+            "title": "Cookies Policy",
+            "content": [
+              {
+                "type": "textBlock",
+                "html": "<p>Last Revised: 09th August 2023.</p><p>This website uses cookies to improve the user experience and ensure that it is functioning effectively, and on occasion also to provide marketing information or advertise online, either directly or through third party vendors.</p><p>This Cookie Policy is part of ‘Kochikar Technologies LLP' and/or its affiliates (hereafter referred as \"<strong>MyPoojaBooking</strong>\", or \"<strong>we</strong>\") Privacy Policy. For more information about MyPoojaBooking, and how it protects your information, please see the Privacy Policy. To provide you with a more personalized and responsive service, MyPoojaBooking needs to remember and store information about how you use this website. This is done using small text files called cookies. Cookies contain small amounts of information and are downloaded to your computer or other device by a server for this website. Your web browser then sends these cookies back to this website on each subsequent visit so that it can recognize you and remember things like your user preferences. You can find more detailed information about cookies and how they work at <a href=\"https://www.aboutcookies.org\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutcookies.org</a>.</p><p>Whenever you use this website, information may be collected using cookies and other technologies. By using this website you agree to MyPoojaBooking's use of cookies as described in this Cookie Policy and also to the use of cookies on the other country, regional or practice specific websites contained in MyPoojaBooking.com that you may visit, as described in their accompanying cookie policy.</p>"
+              },
+              {
+                "type": "textBlock",
+                "title": "What cookies does MyPoojaBooking use and why?",
+                "html": "<p>Following cookies may be used at MyPoojaBooking:</p><ul><li>Essential cookies</li><li>Performance cookies</li><li>Functionality cookies</li><li>Behaviorally Targeted Advertising cookies</li><li>Compliance, Security Authentication Cookies</li><li>Notification Cookies</li></ul><p>MyPoojaBooking or its service providers also use analytic services to understand how effective MyPoojaBooking's content is, what interests MyPoojaBooking's users have, and to improve how this website works. In addition, MyPoojaBooking uses web beacons, or tracking pixels to count visitor numbers and performance cookies to track how many individual users access this website and how often. This information is used for statistical purposes only and it is not MyPoojaBooking's intention to use such information to personally identify any user. However, if you have registered and signed into this website, MyPoojaBooking may combine this information with information from its web analytic services and cookies to analyze how you use this website in more detail.</p><p>Please contact MyPoojaBooking, through any of the means highlighted in our Privacy Policy, if you would like more detailed information on the cookies it uses.</p>"
+              },
+              {
+                "type": "textBlock",
+                "title": "How to Control Cookies?",
+                "html": "<p>By using this website, you agree that MyPoojaBooking can place cookies on your computer or device as explained above. However, you can control and manage cookies in various ways. Please bear in mind that removing or blocking cookies can impact user experience and parts of this website may no longer be fully accessible.</p><ul><li>Browser Controls</li><li>Managing Analytics Cookies</li><li>Managing Local Shared Objects or Flash Cookies</li></ul>"
+              },
+              {
+                "type": "textBlock",
+                "title": "Social Buttons and/or External Web Services",
+                "html": "<p>The website contains 'social buttons' that enable users to share or bookmark web pages. These are buttons for third party social media sites and these sites may log information about your activities on the Internet including on this website. MyPoojaBooking sometimes also uses external web services on this website to display content within the web pages of this website, for example to display images, show videos or run polls. As with the social buttons, MyPoojaBooking cannot prevent these sites, or external domains, from collecting information on your use of this embedded content. Please review the respective terms of use and privacy policies/statements/notices of these sites, or external domains to understand exactly how they use your information and to find out how to opt-out, or delete, such information.</p>"
+              },
+              {
+                "type": "textBlock",
+                "title": "Amendment to the policy",
+                "html": "<p>Further, MyPoojaBooking may modify or amend this Cookie Policy from time to time at its discretion. When MyPoojaBooking makes change to this policy, it will amend the revision date at the top of this page, and such modified or amended Cookie Policy shall be effective to you and your information as of that revision date. MyPoojaBooking encourages you to periodically review this Cookie Policy to be informed about how it is using cookies.</p>"
+              }
+            ]
+          }
+        ],
+        "contactBox": {
+          "title": "Contact & Grievances",
+          "description": "For any legal queries, policy clarifications, or grievance redressal, please reach out to our dedicated compliance officer.",
+          "officer": {
+            "label": "GRIEVANCE OFFICER",
+            "name": "Mr. Divakar Pai",
+            "role": "Compliance & User Rights",
+            "email": "contact@mypoojabooking.com",
+            "address": "D. No. 1-1-2A (Part) Padav, Swasti Cashew Industries Compound, Off Airport Road, Padavinangadi, Mangaluru - 575 008. INDIA"
+          }
+        }
+      }
+    }
+  ]
+}

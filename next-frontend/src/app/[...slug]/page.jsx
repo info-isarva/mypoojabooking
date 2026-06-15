@@ -16,6 +16,7 @@ import faqData from "@/data/pages/faq.json";
 import pricingData from "@/data/pages/pricing.json";
 import policiesData from "@/data/pages/policies.json";
 import templesData from "@/data/pages/temples.json";
+import cookiePolicyData from "@/data/pages/cookie-policy.json";
 
 const PAGE_REGISTRY = {
   "/": homeData,
@@ -28,6 +29,7 @@ const PAGE_REGISTRY = {
   "/pricing": pricingData,
   "/policies": policiesData,
   "/temples": templesData,
+  "/cookie-policy": cookiePolicyData,
 };
 
 function fixUrl(url) {
