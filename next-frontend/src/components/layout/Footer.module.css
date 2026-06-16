@@ -237,21 +237,34 @@
     padding-top: 2.5rem;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
   .grid {
     gap: 2rem;
   }
 
   .columnTitle {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-bottom: 1rem;
   }
 
   .description,
   .newsletterText {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .footerLink {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .emailInput {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .subscribeBtn {
+    padding: 0 1rem;
   }
 }

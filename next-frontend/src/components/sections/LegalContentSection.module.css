@@ -11,7 +11,7 @@
 
 .layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
   gap: 4rem;
   align-items: flex-start;
 }
@@ -420,7 +420,7 @@
 
 @media (max-width: 1200px) {
   .layout {
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
     gap: 2rem;
   }
 
@@ -454,5 +454,138 @@
     position: static;
     top: 100px;
     z-index: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .mainHeading {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+
+  .mainHeading::before,
+  .mainHeading::after {
+    display: none;
+  }
+
+  .listItem {
+    gap: 1rem;
+  }
+
+  .tableRow {
+    padding: 1rem 1.25rem;
+  }
+
+  .contactGrievance {
+    padding: 2.5rem 1.5rem;
+    border-radius: 30px;
+    gap: 2rem;
+  }
+
+  .grievanceTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    padding: 1.5rem 1rem;
+  }
+
+  .navItem {
+    padding: 0.75rem 1rem;
+  }
+
+  .contentBody {
+    gap: 2.5rem;
+  }
+
+  .mainHeading {
+    font-size: 1.35rem;
+    gap: 0.5rem;
+  }
+
+  .infoBox {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .highlightBox {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .iconBox {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .refundTableSection {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .refundTableSection .sectionHeading {
+    margin-bottom: 1.5rem;
+  }
+
+  .tableRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+  }
+
+  .tableCondition {
+    font-size: 0.95rem;
+  }
+
+  .tableRefund {
+    font-size: 1.05rem;
+  }
+
+  .contactGrievance {
+    padding: 1.75rem 1.25rem;
+    border-radius: 24px;
+    gap: 1.5rem;
+  }
+
+  .grievanceTitle {
+    font-size: 1.5rem;
+  }
+
+  .grievanceDesc {
+    font-size: 0.95rem;
+  }
+
+  .officerLabel {
+    margin-bottom: 0.75rem;
+  }
+
+  .officerName {
+    font-size: 1.35rem;
+  }
+
+  .officerRole {
+    font-size: 0.95rem;
+  }
+
+  .officerContact {
+    gap: 1.5rem;
+  }
+
+  .contactItem {
+    font-size: 0.95rem;
+    word-break: break-word;
   }
 }

@@ -112,7 +112,35 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
   .journey {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circleWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .stepDescription {
+    max-width: 100%;
+    font-size: 0.95rem;
   }
 }

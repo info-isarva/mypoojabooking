@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, Mail, Phone, ChevronDown, User, Search, Grid2X2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
+import BookPoojaModal from '../common/BookPoojaModal';
+import TempleLoginModal from '../common/TempleLoginModal';
 
 const logo = '/assets/images/logo.png';
 
@@ -27,6 +29,8 @@ const CustomBurgerIcon = ({ size = 22 }) => (
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBookPoojaOpen, setIsBookPoojaOpen] = useState(false);
+  const [isTempleLoginOpen, setIsTempleLoginOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -67,12 +71,12 @@ export default function Header() {
               <div className={styles.searchIcon} aria-label="Search">
                 <CustomSearchIcon size={36} />
               </div>
-              <button className={styles.btnBookNow}>
+              <button className={styles.btnBookNow} onClick={() => setIsBookPoojaOpen(true)}>
                 <span className={styles.btnTextLong}>BOOK </span>POOJA
               </button>
-              <Link href="/temple-login" className={styles.btnLogin} aria-label="Temple Login">
+              <button onClick={() => setIsTempleLoginOpen(true)} className={styles.btnLogin} aria-label="Temple Login">
                 TEMPLE LOGIN
-              </Link>
+              </button>
             </div>
             <div
               className={styles.languageSwitcher}
@@ -103,7 +107,7 @@ export default function Header() {
 
             {/* Mobile Actions (Left) - Book Pooja */}
             <div className={styles.mobileOnlyActions}>
-              <button className={styles.btnBookNow}>
+              <button className={styles.btnBookNow} onClick={() => setIsBookPoojaOpen(true)}>
                 <span className={styles.btnTextLong}>BOOK </span>POOJA
               </button>
             </div>
@@ -180,9 +184,11 @@ export default function Header() {
               <span>contact@mypoojabooking.com</span>
             </a>
           </div>
-          <Link href="/temple-login" className={styles.mobileLoginBtn}>TEMPLE LOGIN</Link>
+          <button onClick={() => setIsTempleLoginOpen(true)} className={styles.mobileLoginBtn}>TEMPLE LOGIN</button>
         </div>
       </div>
+      <BookPoojaModal isOpen={isBookPoojaOpen} onClose={() => setIsBookPoojaOpen(false)} />
+      <TempleLoginModal isOpen={isTempleLoginOpen} onClose={() => setIsTempleLoginOpen(false)} />
     </div>
   );
 }

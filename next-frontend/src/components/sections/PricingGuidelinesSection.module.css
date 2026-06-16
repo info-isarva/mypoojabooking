@@ -122,3 +122,55 @@
     padding: 3rem 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .guidelinesList {
+    gap: 1.5rem;
+  }
+
+  .guideline {
+    gap: 1rem;
+  }
+
+  .guidelineText {
+    font-size: 0.95rem;
+  }
+
+  .partnerCard {
+    padding: 2rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .partnerTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .partnerDesc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactInfo {
+    margin-bottom: 1.25rem;
+  }
+
+  .email {
+    font-size: 0.9rem;
+    word-break: break-all;
+  }
+
+  .registerBtn {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+}

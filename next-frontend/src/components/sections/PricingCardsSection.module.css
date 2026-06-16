@@ -160,3 +160,44 @@
     padding: 3rem 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .currency {
+    font-size: 2.75rem;
+  }
+
+  .priceText {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .itemList {
+    margin-bottom: 2.5rem;
+  }
+
+  .item {
+    font-size: 0.95rem;
+  }
+
+  .contactBtn {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}

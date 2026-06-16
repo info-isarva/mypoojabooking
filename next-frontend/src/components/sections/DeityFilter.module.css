@@ -146,7 +146,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 1.25rem 0;
+    gap: 1.25rem 0.25rem;
   }
 
   .iconCircle {
@@ -160,6 +160,31 @@
   }
 
   .label {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 90px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid {
+    gap: 1rem 0.15rem;
+  }
+
+  .iconCircle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    max-width: 80px;
   }
 }

@@ -1,0 +1,378 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1.5rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modalBox {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(228, 109, 17, 0.15);
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modalHeader {
+  padding: 1.75rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbf7 100%);
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  letter-spacing: -0.025em;
+  background: linear-gradient(135deg, #e46d11 0%, #a23c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modalSubtitle {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.modalClose {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.modalClose:hover {
+  background: #fee2e2;
+  color: #ef4444;
+  border-color: #fca5a5;
+  transform: rotate(90deg);
+}
+
+.modalBody {
+  padding: 2rem;
+  overflow-y: auto;
+  flex: 1;
+  background: #ffffff;
+}
+
+.searchWrapper {
+  position: relative;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.25rem;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 3rem 1rem 3.25rem;
+  border: 2.5px solid #e2e8f0;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: #1e293b;
+  background: #f8fafc;
+  transition: all 0.25s ease;
+  font-weight: 500;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #e46d11;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(228, 109, 17, 0.12);
+}
+
+.searchClear {
+  position: absolute;
+  right: 1.25rem;
+  background: #e2e8f0;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.searchClear:hover {
+  background: #cbd5e1;
+  color: #1e293b;
+}
+
+.templeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.templeCard {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1.5px solid #f1f5f9;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.templeCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #e46d11;
+  transform: scaleY(0);
+  transition: transform 0.25s ease;
+}
+
+.templeCard:hover {
+  border-color: rgba(228, 109, 17, 0.25);
+  background: #fffcf9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(228, 109, 17, 0.08);
+}
+
+.templeCard:hover::before {
+  transform: scaleY(1);
+}
+
+.templeIconCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #fff5eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+  border: 1px solid #ffd8b3;
+}
+
+.templeCard:hover .templeIconCircle {
+  background: #e46d11;
+}
+
+.templeIcon {
+  color: #e46d11;
+  transition: all 0.25s ease;
+}
+
+.templeCard:hover .templeIcon {
+  color: #ffffff;
+}
+
+.templeDetails {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.templeName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+.templeCard:hover .templeName {
+  color: #e46d11;
+}
+
+.templeLocation {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrowIcon {
+  color: #cbd5e1;
+  margin-left: 0.75rem;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.templeCard:hover .arrowIcon {
+  color: #e46d11;
+  transform: translate(2px, -2px);
+}
+
+.noResults {
+  grid-column: span 2;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness down to 320px */
+@media (max-width: 768px) {
+  .modalOverlay {
+    padding: 0.75rem;
+  }
+
+  .modalBox {
+    max-height: 90vh;
+    border-radius: 20px;
+  }
+
+  .modalHeader {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .modalTitle {
+    font-size: 1.3rem;
+  }
+
+  .modalBody {
+    padding: 1.25rem;
+  }
+
+  .templeGrid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .noResults {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalHeader {
+    padding: 1rem 1.25rem;
+  }
+
+  .modalTitle {
+    font-size: 1.2rem;
+  }
+
+  .searchInput {
+    padding: 0.85rem 2.5rem 0.85rem 2.75rem;
+    font-size: 0.95rem;
+  }
+
+  .searchIcon {
+    left: 1rem;
+  }
+
+  .searchClear {
+    right: 1rem;
+  }
+
+  .templeCard {
+    padding: 1rem;
+  }
+
+  .templeIconCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+
+  .modalBox {
+    max-height: 95vh;
+  }
+
+  .modalHeader {
+    padding: 0.85rem 1rem;
+  }
+
+  .modalTitle {
+    font-size: 1.1rem;
+  }
+
+  .modalBody {
+    padding: 1rem;
+  }
+
+  .templeName {
+    font-size: 0.85rem;
+  }
+
+  .templeLocation {
+    font-size: 0.75rem;
+  }
+}

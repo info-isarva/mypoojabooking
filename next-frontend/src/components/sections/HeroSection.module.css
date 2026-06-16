@@ -189,3 +189,295 @@
     font-size: 1rem;
   }
 }
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.5rem;
+}
+
+.modalBox {
+  background: white;
+  width: 100%;
+  max-width: 760px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  animation: modalEnter 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 85vh;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalHeader {
+  background: linear-gradient(135deg, #e46d11 0%, #b55409 100%);
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-serif);
+  margin: 0;
+}
+
+.modalClose {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modalClose:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(90deg);
+}
+
+.modalBody {
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #faf9f6;
+}
+
+/* Search Bar */
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2d9d0;
+  border-radius: 12px;
+  padding: 0 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.searchWrapper:focus-within {
+  border-color: #e46d11;
+  box-shadow: 0 0 0 3px rgba(228, 109, 17, 0.15), inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.searchIcon {
+  color: #a39589;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.9rem 0;
+  font-size: 1rem;
+  color: #2c2520;
+  background: transparent;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: #a39589;
+}
+
+.searchClear {
+  background: none;
+  border: none;
+  color: #a39589;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchClear:hover {
+  color: #e46d11;
+}
+
+/* Temple Grid */
+.templeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.templeCard {
+  background: white;
+  border: 1px solid #ebdcd0;
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.templeCard:hover {
+  transform: translateY(-2px);
+  border-color: #e46d11;
+  box-shadow: 0 8px 20px rgba(228, 109, 17, 0.08);
+}
+
+.templeIconCircle {
+  width: 46px;
+  height: 46px;
+  background: #fdf6ec;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #e46d11;
+  transition: all 0.25s ease;
+}
+
+.templeCard:hover .templeIconCircle {
+  background: #e46d11;
+  color: white;
+}
+
+.templeDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.templeName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2c2520;
+  line-height: 1.35;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.templeLocation {
+  font-size: 0.8rem;
+  color: #7c7066;
+  font-weight: 500;
+}
+
+.arrowIcon {
+  color: #cbd5e1;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.templeCard:hover .arrowIcon {
+  color: #e46d11;
+  transform: translate(2px, -2px);
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: #7c7066;
+  font-size: 1rem;
+  font-weight: 500;
+  background: white;
+  border-radius: 14px;
+  border: 1px dashed #ebdcd0;
+}
+
+/* Modal Mobile Responsiveness */
+@media (max-width: 768px) {
+  .modalHeader {
+    padding: 1rem 1.5rem;
+  }
+  
+  .modalBody {
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .templeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .modalOverlay {
+    padding: 0.75rem;
+  }
+  
+  .modalBox {
+    max-height: 90vh;
+  }
+
+  .modalHeader {
+    padding: 0.85rem 1rem;
+  }
+  
+  .modalTitle {
+    font-size: 1.25rem;
+  }
+  
+  .modalBody {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .searchInput {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+
+  .templeCard {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .templeIconCircle {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .templeName {
+    font-size: 0.85rem;
+  }
+
+  .templeLocation {
+    font-size: 0.75rem;
+  }
+}
