@@ -46,6 +46,18 @@ export default function Header() {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  // Disable body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
   const isActive = (path) => pathname === path ? styles.navLinkActive : '';
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -157,6 +169,9 @@ export default function Header() {
           <Link href="/" className={styles.mobileMenuLogo}>
             <img src={logo} alt="Logo" />
           </Link>
+          <button onClick={() => setIsTempleLoginOpen(true)} className={styles.mobileHeaderLoginBtn}>
+            TEMPLE LOGIN
+          </button>
           <button className={styles.mobileMenuClose} onClick={toggleMenu} aria-label="Close navigation menu">
             <X size={32} />
           </button>
@@ -184,7 +199,6 @@ export default function Header() {
               <span>contact@mypoojabooking.com</span>
             </a>
           </div>
-          <button onClick={() => setIsTempleLoginOpen(true)} className={styles.mobileLoginBtn}>TEMPLE LOGIN</button>
         </div>
       </div>
       <BookPoojaModal isOpen={isBookPoojaOpen} onClose={() => setIsBookPoojaOpen(false)} />
