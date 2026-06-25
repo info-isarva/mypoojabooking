@@ -24,7 +24,7 @@
 .content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
@@ -93,7 +93,7 @@
 
 .buttonGroup {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -104,12 +104,13 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 1rem 2.5rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 100px;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .primaryBtn {
@@ -127,16 +128,17 @@
 }
 
 .secondaryBtn {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .secondaryBtn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
+  background-color: #f8fafc;
+  border-color: #f8fafc;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .btnIcon {

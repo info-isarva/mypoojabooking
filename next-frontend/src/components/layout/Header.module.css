@@ -401,6 +401,7 @@
 @media (max-width: 1350px) {
   .pillMenu {
     padding: 0 1rem;
+    border: solid 1px #ef7f1a;
   }
 
   .desktopOnlyNav {
@@ -447,6 +448,7 @@
     padding: 0 1.5rem;
     height: 70px;
     overflow: visible;
+    border: solid 1px #ef7f1a !important;
   }
 
   .logoCircle {
@@ -526,7 +528,7 @@
   .pillMenu {
     height: 54px;
     border-radius: 60px;
-    border-width: 2px;
+    border: solid 1px #ef7f1a !important;
     padding: 0 1rem;
     overflow: visible;
   }

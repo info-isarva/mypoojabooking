@@ -11,17 +11,35 @@ export default function ContactFormSection({ data = {} }) {
     subject: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for reaching out! We will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setLoading(true);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        alert('Thank you for reaching out! We will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert(result.error || 'Failed to send message. Please try again.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('An error occurred. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -97,8 +115,8 @@ export default function ContactFormSection({ data = {} }) {
               <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" className={styles.recaptchaLogo} />
             </div>
 
-            <button type="submit" className={styles.submitBtn}>
-              SEND MESSAGE
+            <button type="submit" className={styles.submitBtn} disabled={loading}>
+              {loading ? 'SENDING...' : 'SEND MESSAGE'}
             </button>
           </form>
         </div>

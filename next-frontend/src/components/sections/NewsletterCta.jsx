@@ -13,12 +13,30 @@ export default function NewsletterCta({ data = {} }) {
 
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail('');
+    if (!email) return;
+    setLoading(true);
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setSubmitted(true);
+        setEmail('');
+      } else {
+        alert(result.error || 'Failed to subscribe. Please try again.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('An error occurred. Please try again later.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -39,9 +57,12 @@ export default function NewsletterCta({ data = {} }) {
                   placeholder={placeholder}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  disabled={loading}
                   required
                 />
-                <button type="submit" className={styles.btn}>{buttonText}</button>
+                <button type="submit" className={styles.btn} disabled={loading}>
+                  {loading ? 'Subscribing...' : buttonText}
+                </button>
               </form>
             )}
           </div>

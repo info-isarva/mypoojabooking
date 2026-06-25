@@ -3,7 +3,7 @@
   "slug": "/faq",
   "seo": {
     "metaTitle": "Frequently Asked Questions - Pooja Booking Help | MyPoojaBooking",
-    "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and Sankalpa details on MyPoojaBooking."
+    "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and support on MyPoojaBooking."
   },
   "sections": [
     {
@@ -11,8 +11,8 @@
       "type": "FaqHeroSection",
       "props": {
         "tag": "DIVINE ASSISTANCE",
-        "title": "Frequently Asked Questions - Pooja Booking Help",
-        "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and Sankalpa details on MyPoojaBooking.",
+        "title": "Frequently Asked Questions - Help Center",
+        "description": "Find answers about booking poojas online, payment, cancellation, prasadam dispatch, and support on MyPoojaBooking.",
         "backgroundImage": "/assets/images/faq-hero.png"
       }
     },
@@ -28,7 +28,7 @@
           },
           {
             "id": "payments",
-            "label": "Payments & Security",
+            "label": "Payments & Support",
             "icon": "CreditCard"
           },
           {
@@ -40,50 +40,57 @@
             "id": "prasadam",
             "label": "Prasadam & Dispatch",
             "icon": "Truck"
-          },
-          {
-            "id": "sankalpa",
-            "label": "Sankalpa & Receipts",
-            "icon": "FileText"
           }
         ],
         "faqData": {
           "booking": [
             {
-              "question": "How does MyPoojaBooking work with temples?",
-              "answer": "MyPoojaBooking operates as an authorised booking partner for each onboarded temple. Every booking is directly transmitted to the temple administration. Devotees receive a unique Temple Transaction ID that can be verified at the temple counter."
+              "question": "What is MyPoojaBooking?",
+              "answer": "MyPoojaBooking is a technology platform that enables devotees to book sevas online at participating temples and make payments securely. The platform facilitates seamless coordination between devotees and temples for seva bookings."
             },
             {
-              "question": "Is physical presence required to book a seva?",
-              "answer": "Whether physical presence is required depends on the specific seva. Each seva listing on MyPoojaBooking clearly indicates whether the devotee must be physically present or whether the seva can be performed on their behalf remotely."
+              "question": "How do I know my seva booking is confirmed?",
+              "answer": "Once the booking and payment are successfully completed, a confirmation receipt is generated. The receipt contains booking details, seva information, and the temple’s contact details."
             },
             {
-              "question": "How are payments secured and what receipts are provided?",
-              "answer": "MyPoojaBooking ensures that all payments are processed through enterprise-grade encrypted gateways. Devotees receive an instant digital receipt, followed by an official temple receipt once the ritual is officially acknowledged by the temple administration."
-            },
-            {
-              "question": "What is the cancellation and refund process?",
-              "answer": "Cancellations on MyPoojaBooking are subject to the specific policies of the individual temple. Generally, once a Sankalpa has been performed, the seva cannot be cancelled. For all other cases, devotees can contact support for assistance with the refund process."
-            },
-            {
-              "question": "How is Prasadam dispatched and tracked?",
-              "answer": "Prasadam for sevas booked through MyPoojaBooking is carefully packed and dispatched via our authorised logistics partners. Devotees receive a tracking ID to monitor the delivery status directly to their provided address."
-            },
-            {
-              "question": "How are Sankalpa details like Gotra and Nakshatra handled?",
-              "answer": "Devotees can provide specific details including Gotra, Nakshatra, and family names during the booking process on MyPoojaBooking. These details are officially provided to the temple pandits to be included in the ritual Sankalpa."
+              "question": "Can I cancel or reschedule a seva?",
+              "answer": "Cancellation or rescheduling of sevas is subject to the respective temple’s policies and the nature of the seva. Devotees are requested to refer to the cancellation terms displayed at the time of booking."
             }
           ],
           "payments": [
             {
-              "question": "What payment methods are accepted?",
-              "answer": "We accept all major credit/debit cards, UPI, Net Banking, and popular digital wallets."
+              "question": "What support does MyPoojaBooking provide?",
+              "answer": "MyPoojaBooking support assists devotees with booking-related queries, payment confirmations, and technical issues on the platform. For seva or Prasadam-related matters, support may assist by coordinating with the temple if required."
+            },
+            {
+              "question": "How can I contact MyPoojaBooking support?",
+              "answer": "Support contact details are available on the website under the Contact Us section. Devotees may reach out for any platform-related assistance. We request devotees’ understanding, as temple rituals and associated processes are governed by individual temple practices."
+            }
+          ],
+          "seva": [
+            {
+              "question": "Who conducts the seva and related rituals?",
+              "answer": "All sevas and rituals are conducted by the respective temple in accordance with its traditions and practices. MyPoojaBooking does not perform or influence the conduct of religious rituals."
+            }
+          ],
+          "prasadam": [
+            {
+              "question": "How is Prasadam handled?",
+              "answer": "Prasadam, where applicable, is prepared and dispatched by the respective temple. The preparation, packaging, and dispatch are managed by the temple as per its internal processes."
+            },
+            {
+              "question": "I have not received Prasadam. Whom should I contact?",
+              "answer": "For any queries related to Prasadam dispatch or delivery, devotees are requested to contact the temple directly. The temple’s contact mobile number is mentioned on the seva receipt / booking confirmation."
+            },
+            {
+              "question": "Does MyPoojaBooking handle courier or delivery?",
+              "answer": "No. Courier arrangements, delivery logistics, and tracking details are managed by the temple administration. MyPoojaBooking does not control courier services."
             }
           ]
         },
         "helpCard": {
           "title": "Need more help?",
-          "description": "Our spiritual guides are available 24/7 for your assistance.",
+          "description": "Our support team is available to assist you with platform-related queries.",
           "buttonText": "Contact Support",
           "link": "/contact"
         }

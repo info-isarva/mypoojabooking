@@ -190,10 +190,6 @@ export default function Header() {
         <nav className={styles.mobileNav}>
           <Link href="/" className={`${styles.mobileNavLink} ${isActive('/')}`}>Home</Link>
           <Link href="/temples" className={`${styles.mobileNavLink} ${isActive('/temples')}`}>Temples</Link>
-          <Link href="/poojas" className={`${styles.mobileNavLink} ${isActive('/poojas')}`}>Poojas</Link>
-          <Link href="/festivals" className={`${styles.mobileNavLink} ${isActive('/festivals')}`}>Festivals</Link>
-          <Link href="/bhajans-stotras" className={`${styles.mobileNavLink} ${isActive('/bhajans-stotras')}`}>Bhajans & Stotras</Link>
-          <Link href="/devotion" className={`${styles.mobileNavLink} ${isActive('/devotion')}`}>My Devotion</Link>
           <Link href="/about" className={`${styles.mobileNavLink} ${isActive('/about')}`}>About Us</Link>
           <Link href="/contact" className={`${styles.mobileNavLink} ${isActive('/contact')}`}>Contact Us</Link>
         </nav>

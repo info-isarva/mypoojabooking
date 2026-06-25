@@ -40,6 +40,14 @@ const PAGE_REGISTRY = {
   "/cookie-policy": cookiePolicyData,
 };
 
+export async function generateStaticParams() {
+  const paths = Object.keys(PAGE_REGISTRY).filter(path => path !== '/');
+  return paths.map(path => {
+    const slug = path.replace(/^\//, '').split('/');
+    return { slug };
+  });
+}
+
 function fixUrl(url) {
   if (!url || typeof url !== 'string') return url;
   if (url.includes('localhost:8000/api')) {
