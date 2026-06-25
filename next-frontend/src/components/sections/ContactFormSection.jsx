@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
 import styles from './ContactFormSection.module.css';
 
 export default function ContactFormSection({ data = {} }) {
@@ -18,25 +19,67 @@ export default function ContactFormSection({ data = {} }) {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6Ld_YOUR_DEFAULT_SITE_KEY_HERE';
+
+  useEffect(() => {
+    // Only load if key is configured and not default placeholder
+    if (siteKey && !siteKey.includes('YOUR_DEFAULT_SITE_KEY')) {
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+        const badge = document.querySelector('.grecaptcha-badge');
+        if (badge) badge.remove();
+      };
+    }
+  }, [siteKey]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
+      let token = '';
+      if (window.grecaptcha && siteKey && !siteKey.includes('YOUR_DEFAULT_SITE_KEY')) {
+        token = await new Promise((resolve) => {
+          window.grecaptcha.ready(() => {
+            window.grecaptcha.execute(siteKey, { action: 'submit' }).then(resolve);
+          });
+        });
+      }
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({ ...formData, recaptchaToken: token })
       });
       const result = await response.json();
       if (response.ok && result.success) {
-        alert('Thank you for reaching out! We will get back to you soon.');
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent!',
+          text: 'Thank you for reaching out! We will get back to you soon.',
+          confirmButtonColor: '#d97706'
+        });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        alert(result.error || 'Failed to send message. Please try again.');
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Failed',
+          text: result.error || 'Failed to send message. Please try again.',
+          confirmButtonColor: '#d97706'
+        });
       }
     } catch (err) {
       console.error(err);
-      alert('An error occurred. Please try again later.');
+      Swal.fire({
+        icon: 'error',
+        title: 'An Error Occurred',
+        text: 'An error occurred. Please try again later.',
+        confirmButtonColor: '#d97706'
+      });
     } finally {
       setLoading(false);
     }
@@ -107,13 +150,7 @@ export default function ContactFormSection({ data = {} }) {
               ></textarea>
             </div>
 
-            <div className={styles.captchaPlaceholder}>
-              <div className={styles.captchaBox}>
-                <input type="checkbox" id="captcha" className={styles.checkbox} />
-                <label htmlFor="captcha">I'm not a robot</label>
-              </div>
-              <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" className={styles.recaptchaLogo} />
-            </div>
+
 
             <button type="submit" className={styles.submitBtn} disabled={loading}>
               {loading ? 'SENDING...' : 'SEND MESSAGE'}
