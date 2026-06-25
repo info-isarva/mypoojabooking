@@ -1,4 +1,5 @@
 import HeroSection from '../sections/HeroSection';
+import FeaturedEvent from '../sections/FeaturedEvent';
 import PopularTemples from '../sections/PopularTemples';
 import FeaturedTemples from '../sections/FeaturedTemples';
 import PoojaBenefits from '../sections/PoojaBenefits';
@@ -51,6 +52,7 @@ import EmptyStateSection from '../sections/EmptyStateSection';
 // Registry maps section "type" from JSON to React component
 const SECTION_REGISTRY = {
   HeroSection,
+  FeaturedEvent,
   PopularTemples,
   FeaturedTemples,
   PoojaBenefits,

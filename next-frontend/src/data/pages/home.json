@@ -34,6 +34,24 @@
       }
     },
     {
+      "id": "featured-event",
+      "type": "FeaturedEvent",
+      "props": {
+        "badge": "⭐ FEATURED EVENT",
+        "title": "Kashi Moola Math Chaturmas 2026",
+        "location": "Varanasi",
+        "dateRange": "July–September 2026",
+        "description": "Participate in Chaturmas by registering as a devotee, booking accommodation, and accessing all event services.",
+        "registerText": "Register as a Devotee",
+        "registerLink": "https://mypoojabooking.com/registration/kashimath/1",
+        "bookText": "Book Accommodation",
+        "bookLink": "https://mypoojabooking.com/registration/kashimath/1",
+        "bhajanText": "Bhajana Booking",
+        "bhajanLink": "https://mypoojabooking.com/registration/kashimath/1",
+        "backgroundImage": "/assets/images/kashimath-chaturmasa-vratha-2026-01.jpg"
+      }
+    },
+    {
       "id": "popular-temples",
       "type": "PopularTemples",
       "props": {
