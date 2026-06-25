@@ -12,9 +12,9 @@
       "id": "about-hero",
       "type": "HeroSection",
       "props": {
-        "headline": "About MyPoojaBooking - Connecting",
-        "headlineAccent": "Devotees with Temples",
-        "subheadline": "India's trusted online pooja and seva booking platform, bringing the sacred traditions of India's holiest temples to your doorstep.",
+        "headline": "About MyPoojaBooking™ - ",
+        "headlineAccent": "Your Devotion. Our Platform.",
+        "subheadline": "A trusted temple seva booking platform serving devotees across India and abroad.",
         "banner": "/assets/images/hero.webp",
         "ctas": [
           {
@@ -32,17 +32,17 @@
       "props": {
         "title": "Bridging Devotion and Technology",
         "description": [
-          "MyPoojaBooking (mypoojabooking.com) is an authorised online seva and pooja booking platform based in Mangaluru, Karnataka, India. Founded by Kochikar Technologies LLP, it serves as the official digital booking partner of onboarded Hindu temples across India, enabling devotees to book temple sevas, access festival calendars, and stay connected with their chosen temples from anywhere in the world.",
-          "Unlike general pandit-booking platforms, MyPoojaBooking works directly with temple administrations, ensuring every booking is officially acknowledged by the temple. We leverage advanced cloud infrastructure to ensure that every ritual is authenticated, and every devotee can participate in seva regardless of where they are in the world."
+          "MyPoojaBooking™ (mypoojabooking.com) is an authorised online seva and pooja booking platform based in Mangaluru, Karnataka, India. Founded by Kochikar Technologies LLP, MyPoojaBookingserves as the official digital booking partner for participating temples, working directly with temple administrations rather than intermediaries, enabling devotees to book temple sevas, access festival calendars, and stay connected with their chosen temples from anywhere in the world.",
+          "Direct Temple Partnerships — Unlike marketplace-based pooja platforms, MyPoojaBooking works directly with temple administrations, ensuring every booking is recognised and processed through the temple's authorised systems. We leverage advanced cloud infrastructure to ensure that every ritual is authenticated, and every devotee can participate in seva regardless of where they are in the world."
         ],
         "stats": [
           {
             "label": "AUTHENTICATED TEMPLES",
-            "value": "500+"
+            "value": "30+"
           },
           {
-            "label": "RITUALS CONDUCTED",
-            "value": "1.2M+"
+            "label": "BOOKINGS PROCESSED",
+            "value": "1.1Lakh+"
           }
         ],
         "quote": "Where ancient tradition meets digital innovation.",
@@ -53,39 +53,38 @@
       "id": "about-stats",
       "type": "ComplexStatsSection",
       "props": {
-        "title": "A Growing Sanctuary of Temples",
-        "subtitle": "Partnering with historical institutions to preserve the sanctity of worship.",
+        "title": "Growing Temple Network",
+        "subtitle": "Partnering with heritage temples and religious institutions to preserve the sanctity of worship.",
         "regionalGuardians": {
-          "title": "Regional Guardians",
-          "description": "Our network spans across 24 states, encompassing historical Shakti Peethas, Jyotirlingas, and local grama devatas.",
-          "linkText": "EXPLORE THE NETWORK →",
+          "title": "Across India",
+          "description": "Currently serving temples, maths, trusts and religious institutions through a unified platform across Karnataka, Kerala, Maharashtra, Uttar Pradesh, Uttarakhand and Delhi, with continued expansion underway.",
           "image": "/assets/images/regional-gaurdian.png"
         },
         "devoteeCard": {
-          "value": "250,000+",
-          "description": "Active devotees engaged monthly in our digital temple community.",
+          "value": "60,000+",
+          "description": "Devotees actively engaging with temples through our platform every month.",
           "avatars": [
             "/assets/images/icons/general/user-male.png",
             "/assets/images/icons/general/user-female.png",
             "/assets/images/icons/general/user-male.png"
           ],
-          "avatarCount": "+12k"
+          "avatarCount": "+60k"
         },
         "bottomStats": [
           {
-            "label": "SATISFACTION RATE",
-            "value": "98%",
-            "description": "Verified through post-ritual feedback from our global community."
+            "label": "OFFICIAL TEMPLEBOOKINGS",
+            "value": "100%",
+            "description": "Every booking is routed through authorised temple systems."
           },
           {
             "label": "RITUAL VARIATIONS",
-            "value": "150+",
+            "value": "1500+",
             "description": "From simple Archanas to elaborate Maha Yagnas and Shanti Poojas."
           },
           {
-            "label": "GLOBAL ACCESS",
+            "label": "ONLINE BOOKING",
             "value": "24/7",
-            "description": "Booking availability across all time zones with live support."
+            "description": "Book sevas anytime, from anywhere in the world."
           }
         ]
       }
@@ -100,7 +99,7 @@
           {
             "icon": "ShieldCheck",
             "title": "Authenticated Rituals",
-            "description": "Every pandit and temple is physically verified by our regional coordinators to ensure parampara is maintained."
+            "description": "Every onboarded temple is verified and approved by our team to ensure authenticity and adherence to established traditions."
           },
           {
             "icon": "Banknote",
@@ -110,7 +109,7 @@
           {
             "icon": "LockKeyhole",
             "title": "Data Privacy",
-            "description": "Your personal sankalp details and private information are protected by strict privacy protocols."
+            "description": "Your booking information is securely stored and processed solely for temple service delivery and operational requirements."
           }
         ]
       }
@@ -128,7 +127,7 @@
               "description": "Schedule complex rituals in minutes via our streamlined mobile interface."
             },
             {
-              "title": "Digital Sankalp Records",
+              "title": "Digital Ritual Records",
               "description": "Maintain a spiritual timeline of your family's prayers and milestones."
             }
           ]
@@ -139,11 +138,15 @@
           "points": [
             {
               "title": "Seva Management",
-              "description": "Automated scheduling and inventory tracking for ritual materials."
+              "description": "Automated booking management, seva scheduling, operational tracking and workflow automation."
             },
             {
               "title": "Financial Transparency",
-              "description": "Detailed reporting and direct reconciliation of all devotional offerings."
+              "description": "Detailed accounting, reconciliation and reporting of devotional offerings."
+            },
+            {
+              "title": "Temple Kiosk Solutions",
+              "description": "Enable devotees to book sevas directly through self-service kiosks installed within temple premises."
             },
             {
               "title": "Global Outreach",
@@ -162,7 +165,8 @@
         "subtitle": "Whether you are a devotee seeking divine connection or a temple guardian preserving heritage, we welcome you.",
         "primaryCta": {
           "text": "Start Your Booking",
-          "link": "/temples"
+          "link": "#",
+          "action": "bookPooja"
         },
         "secondaryCta": {
           "text": "Partner With Us",

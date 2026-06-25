@@ -4,6 +4,14 @@ import { notFound } from "next/navigation";
 import { preload } from 'react-dom';
 import AnalyticsTracker from "@/components/utils/AnalyticsTracker";
 import { API_URL } from "@/utils/api";
+import fs from 'fs';
+import path from 'path';
+
+function getTemplesData() {
+  const filePath = path.join(process.cwd(), 'src', 'data', 'temples.json');
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  return JSON.parse(raw);
+}
 
 // Data imports
 import homeData from "@/data/pages/home.json";
@@ -130,34 +138,32 @@ async function fetchServerData(pageData) {
   const updatedSections = await Promise.all(pageData.sections.map(async (section) => {
     if (section.type === 'TempleListingGrid') {
       try {
-        const templesJson = require('@/data/temples.json');
-        return { ...section, props: { ...section.props, initialTemples: templesJson } };
+        const allTemples = getTemplesData();
+        return { ...section, props: { ...section.props, initialTemples: allTemples } };
       } catch (e) {
         console.error('Failed to load local static temples:', e);
       }
     }
 
-    if (section.type === 'PopularTemples' && section.props.apiUrl) {
+    if (section.type === 'PopularTemples') {
       try {
-        const res = await fetch(section.props.apiUrl, { next: { revalidate: 3600 } });
-        if (res.ok) {
-          const items = await res.json();
-          return { ...section, props: { ...section.props, items } };
-        }
+        const allTemples = getTemplesData();
+        const popularTemples = allTemples.filter(t => t.popular === true);
+        return { ...section, props: { ...section.props, items: popularTemples } };
       } catch (e) {
-        console.error('Failed to fetch popular temples on server:', e);
+        console.error('Failed to load popular temples from static file:', e);
       }
     }
     
     if (section.type === 'TodayAtTemple' || section.type === 'AboutTemple') {
       try {
-        const res = await fetch(`${API_URL}/panchanga`, { next: { revalidate: 3600 } });
-        if (res.ok) {
-          const panchangaData = await res.json();
+        const { getTodayPanchanga } = require('@/utils/panchanga');
+        const panchangaData = getTodayPanchanga();
+        if (panchangaData) {
           return { ...section, props: { ...section.props, panchangaData } };
         }
       } catch (e) {
-        console.error('Failed to fetch panchanga on server:', e);
+        console.error('Failed to load panchanga locally on server:', e);
       }
     }
 

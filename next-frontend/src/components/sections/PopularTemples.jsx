@@ -1,9 +1,13 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
 import styles from './PopularTemples.module.css';
+import allTemples from '@/data/temples.json';
+import EmptyStateSection from './EmptyStateSection';
+
+const popularTemplesStatic = allTemples.filter(t => t.popular === true);
 
 const imageMap = {
   'temple_somnath.png': '/assets/images/temple_somnath.png',
@@ -14,13 +18,8 @@ const imageMap = {
   'temple_jagannath.png': '/assets/images/temple_jagannath.png',
 };
 
-import EmptyStateSection from './EmptyStateSection';
-
 export default function PopularTemples({ data = {} }) {
   const sliderRef = useRef(null);
-  const [temples, setTemples] = useState(data.items || []);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
   const {
     title = 'Explore Popular Temples',
@@ -28,26 +27,31 @@ export default function PopularTemples({ data = {} }) {
     apiUrl,
   } = data;
 
+  // Use server-passed items → static file filter → empty
+  const [temples, setTemples] = useState(
+    (propItems && propItems.length > 0) ? propItems : popularTemplesStatic
+  );
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
+    // If server passed items, use them
     if (propItems && propItems.length > 0) {
       setTemples(propItems);
-      setLoading(false);
       return;
     }
-
-    if (data.items && data.items.length > 0) {
-      setTemples(data.items);
+    // If static import has popular temples, use them (already set in useState)
+    if (popularTemplesStatic.length > 0) {
+      setTemples(popularTemplesStatic);
       return;
     }
-
+    // Last resort: fetch from API
     if (apiUrl) {
       const fetchTemples = async () => {
         setLoading(true);
         try {
           const response = await fetch(apiUrl);
-          if (!response.ok) {
-            throw new Error('Failed to fetch temples');
-          }
+          if (!response.ok) throw new Error('Failed to fetch temples');
           const result = await response.json();
           setTemples(result);
           setError(null);
@@ -58,7 +62,6 @@ export default function PopularTemples({ data = {} }) {
           setLoading(false);
         }
       };
-
       fetchTemples();
     }
   }, [propItems, apiUrl]);
@@ -72,6 +75,34 @@ export default function PopularTemples({ data = {} }) {
       });
     }
   };
+
+  // Drag-to-scroll for tags
+  const tagDragState = useRef({ isDown: false, startX: 0, scrollLeft: 0 });
+
+  const onTagsMouseDown = useCallback((e) => {
+    const el = e.currentTarget;
+    tagDragState.current = { isDown: true, startX: e.pageX - el.offsetLeft, scrollLeft: el.scrollLeft };
+    el.classList.add(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseLeave = useCallback((e) => {
+    tagDragState.current.isDown = false;
+    e.currentTarget.classList.remove(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseUp = useCallback((e) => {
+    tagDragState.current.isDown = false;
+    e.currentTarget.classList.remove(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseMove = useCallback((e) => {
+    if (!tagDragState.current.isDown) return;
+    e.preventDefault();
+    const el = e.currentTarget;
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - tagDragState.current.startX) * 1.5;
+    el.scrollLeft = tagDragState.current.scrollLeft - walk;
+  }, []);
 
   if (!loading && (error || temples.length === 0)) {
     return (
@@ -132,13 +163,32 @@ export default function PopularTemples({ data = {} }) {
                   </div>
                   <p className={styles.description}>{temple.description}</p>
 
-                  <div className={styles.tagsContainer}>
+                  <div
+                    className={styles.tagsContainer}
+                    onMouseDown={onTagsMouseDown}
+                    onMouseLeave={onTagsMouseLeave}
+                    onMouseUp={onTagsMouseUp}
+                    onMouseMove={onTagsMouseMove}
+                  >
                     {temple.tags && temple.tags.map((tag, index) => (
                       <span key={index} className={styles.tag}>{tag}</span>
                     ))}
                   </div>
 
-                  <Link href={`/temples/${temple.slug || temple.id}`} className={styles.cardBtn}>KNOW MORE</Link>
+                  {(temple.website || temple.slug === 'dwarkadhish') && (
+                    temple.website ? (
+                      <a
+                        href={temple.website}
+                        className={styles.cardBtn}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        KNOW MORE
+                      </a>
+                    ) : (
+                      <Link href={`/temples/${temple.slug || temple.id}`} className={styles.cardBtn}>KNOW MORE</Link>
+                    )
+                  )}
                 </div>
               </div>
             ))}

@@ -184,6 +184,10 @@
 }
 
 @media (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+
   .section {
     padding: 2.5rem 0;
   }

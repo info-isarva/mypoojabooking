@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { MapPin } from 'lucide-react';
 import { useFilter } from '../../context/FilterContext';
@@ -67,6 +67,34 @@ export default function TempleListingGrid({ data = {} }) {
     setVisibleCount(prev => prev + loadMoreIncrement);
   };
 
+  // Drag-to-scroll for tags
+  const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0 });
+
+  const onTagsMouseDown = useCallback((e) => {
+    const el = e.currentTarget;
+    dragState.current = { isDown: true, startX: e.pageX - el.offsetLeft, scrollLeft: el.scrollLeft };
+    el.classList.add(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseLeave = useCallback((e) => {
+    dragState.current.isDown = false;
+    e.currentTarget.classList.remove(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseUp = useCallback((e) => {
+    dragState.current.isDown = false;
+    e.currentTarget.classList.remove(styles.dragging);
+  }, [styles.dragging]);
+
+  const onTagsMouseMove = useCallback((e) => {
+    if (!dragState.current.isDown) return;
+    e.preventDefault();
+    const el = e.currentTarget;
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - dragState.current.startX) * 1.5;
+    el.scrollLeft = dragState.current.scrollLeft - walk;
+  }, []);
+
   if (loading) return <div className={styles.loader}>Seeking divine destinations...</div>;
   if (error) {
     return (
@@ -111,13 +139,36 @@ export default function TempleListingGrid({ data = {} }) {
                 </div>
                 <p className={styles.description}>{temple.description}</p>
 
-                <div className={styles.tagsContainer}>
+                <div
+                  className={styles.tagsContainer}
+                  onMouseDown={onTagsMouseDown}
+                  onMouseLeave={onTagsMouseLeave}
+                  onMouseUp={onTagsMouseUp}
+                  onMouseMove={onTagsMouseMove}
+                >
                   {temple.tags && temple.tags.map((tag, index) => (
                     <span key={index} className={styles.tag}>{tag}</span>
                   ))}
                 </div>
 
-                <Link href={`/temples/${temple.slug || temple.id}`} className={styles.cardBtn}>Know More</Link>
+                <div className={styles.cardSpacer} />
+
+                {(temple.website || temple.slug === 'dwarkadhish') && (
+                  temple.website ? (
+                    <a
+                      href={temple.website}
+                      className={styles.cardBtn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Know More
+                    </a>
+                  ) : (
+                    <Link href={`/temples/${temple.slug || temple.id}`} className={styles.cardBtn}>
+                      Know More
+                    </Link>
+                  )
+                )}
               </div>
             </div>
           ))}

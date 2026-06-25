@@ -1,8 +1,20 @@
+'use client';
+
+import { useState } from 'react';
 import styles from './DarkCtaSection.module.css';
 import Link from 'next/link';
+import BookPoojaModal from '../common/BookPoojaModal';
 
 export default function DarkCtaSection({ data = {} }) {
   const { title, titleAccent, subtitle, primaryCta, secondaryCta } = data;
+  const [isBookPoojaOpen, setIsBookPoojaOpen] = useState(false);
+
+  const handlePrimaryClick = (e) => {
+    if (primaryCta?.action === 'bookPooja') {
+      e.preventDefault();
+      setIsBookPoojaOpen(true);
+    }
+  };
 
   return (
     <section className={styles.section}>
@@ -15,7 +27,11 @@ export default function DarkCtaSection({ data = {} }) {
           
           <div className={styles.buttonGroup}>
             {primaryCta && (
-              <Link href={primaryCta.link} className={styles.primaryBtn}>
+              <Link
+                href={primaryCta.link || '#'}
+                className={styles.primaryBtn}
+                onClick={handlePrimaryClick}
+              >
                 {primaryCta.text}
               </Link>
             )}
@@ -27,6 +43,11 @@ export default function DarkCtaSection({ data = {} }) {
           </div>
         </div>
       </div>
+
+      <BookPoojaModal
+        isOpen={isBookPoojaOpen}
+        onClose={() => setIsBookPoojaOpen(false)}
+      />
     </section>
   );
 }

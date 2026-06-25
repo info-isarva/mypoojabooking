@@ -1,8 +1,8 @@
 import styles from './StatsSection.module.css';
 
 const stats = [
-  { label: 'Famous Temples', value: '500+' },
-  { label: 'Poojas Performed', value: '1M+' },
+  { label: 'AUTHENTICATED TEMPLES', value: '30+' },
+  { label: 'BOOKINGS PROCESSED', value: '1.1Lakh+' },
   { label: 'Daily Bookings', value: '5K+' },
   { label: 'Devotee Rating', value: '4.9/5' }
 ];

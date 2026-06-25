@@ -21,12 +21,15 @@
   font-weight: 500;
 }
 
+/* Grid: all rows align because cards use same height */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  align-items: stretch;
 }
 
+/* Card always fills its grid cell height */
 .card {
   background: white;
   border-radius: 16px;
@@ -34,6 +37,7 @@
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
+  height: 100%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
@@ -42,8 +46,10 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Fixed image height */
 .imgWrapper {
-  height: 240px;
+  height: 200px;
+  flex-shrink: 0;
   overflow: hidden;
   position: relative;
 }
@@ -59,12 +65,12 @@
   transform: scale(1.1);
 }
 
+/* Content fills remaining space and pushes button to bottom */
 .cardContent {
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .templeName {
@@ -72,6 +78,14 @@
   font-weight: 700;
   color: #F37021;
   line-height: 1.2;
+  margin-bottom: 0.4rem;
+  /* Exactly 2 lines height */
+  height: calc(1.4rem * 1.2 * 2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .locationInfo {
@@ -80,28 +94,54 @@
   gap: 0.4rem;
   color: #6B7280;
   font-size: 1rem;
+  margin-bottom: 0.6rem;
+  /* Clamp long locations to 1 line */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .locationIcon {
   color: #F37021;
+  flex-shrink: 0;
 }
 
+/* Fixed height description — always 3 lines regardless of content */
 .description {
   font-size: 1rem;
   color: #4B5563;
   line-height: 1.6;
+  /* Exactly 3 lines */
+  height: calc(1rem * 1.6 * 3);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
 }
 
+/* Tags row: single horizontal scroll — no wrapping, drag-scrollable */
 .tagsContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+  padding-bottom: 2px;
+  flex-shrink: 0;
+  cursor: grab;
+  user-select: none;
+}
+
+.tagsContainer.dragging {
+  cursor: grabbing;
+}
+
+.tagsContainer::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
 }
 
 .tag {
@@ -111,10 +151,19 @@
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Spacer pushes button to bottom */
+.cardSpacer {
+  flex: 1;
+  min-height: 0.75rem;
 }
 
 .cardBtn {
-  margin-top: 1.5rem;
+  display: block;
+  margin-top: 1rem;
   width: 100%;
   padding: 0.875rem;
   background-color: #F37021;
@@ -126,6 +175,8 @@
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
   text-transform: uppercase;
+  flex-shrink: 0;
+  text-decoration: none;
 }
 
 .cardBtn:hover {
@@ -190,7 +241,7 @@
   }
 
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .templeName {

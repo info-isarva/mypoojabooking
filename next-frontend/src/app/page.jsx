@@ -93,13 +93,13 @@ async function fetchServerData(pageData) {
     
     if (section.type === 'TodayAtTemple' || section.type === 'AboutTemple') {
       try {
-        const res = await fetch(`${API_URL}/panchanga`, { next: { revalidate: 3600 } });
-        if (res.ok) {
-          const panchangaData = await res.json();
+        const { getTodayPanchanga } = require('@/utils/panchanga');
+        const panchangaData = getTodayPanchanga();
+        if (panchangaData) {
           return { ...section, props: { ...section.props, panchangaData } };
         }
       } catch (e) {
-        console.error('Failed to fetch panchanga on server:', e);
+        console.error('Failed to load panchanga locally on server:', e);
       }
     }
 

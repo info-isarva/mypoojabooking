@@ -13,7 +13,7 @@
 .panchangaLabel {
   background-color: #E25E14;
   color: white;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@
   width: 60px;
   height: 2px;
   background-color: white;
-  margin: 0.75rem 0;
+  margin: 0.5rem 0;
 }
 
 .detailsText {
@@ -42,6 +42,15 @@
   letter-spacing: 0.1em;
   opacity: 0.9;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.dateText {
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.85;
+  text-align: center;
+  margin-top: 0.25rem;
 }
 
 .panchangaContent {
@@ -49,7 +58,7 @@
   display: flex;
   padding: 1.5rem 2rem;
   text-align: left;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .panchangaItem {
@@ -72,6 +81,7 @@
 .itemTitle {
   font-size: 1.1rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .itemDetails {
@@ -96,6 +106,13 @@
   margin: 0 0.5rem;
 }
 
+.strongText {
+  color: #1F2937;
+  font-weight: 700;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
 .loading {
   padding: 2rem;
   text-align: center;
@@ -117,8 +134,28 @@
 
   .panchangaContent {
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     gap: 1.5rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .panchangaItem {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .itemTitle {
+    white-space: normal;
+  }
+
+  .strongText {
+    white-space: normal;
+  }
+
+  .itemHeader {
+    justify-content: flex-start;
   }
 
   .panchangaDivider {
@@ -127,3 +164,4 @@
     margin: 0;
   }
 }
+

@@ -65,13 +65,13 @@ export default function TodayAtTemple({ data = {} }) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Today at the Temple</h2>
+        {/* <h2 className={styles.title}>Today at the Temple</h2> */}
 
         <div className={styles.panchangaWrapper}>
           <PanchangaBar serverData={data.panchangaData} />
         </div>
 
-        <div className={styles.navGroup}>
+        {/* <div className={styles.navGroup}>
           <button className={styles.navBtn} onClick={() => scroll('left')} aria-label="Previous">
             <ChevronLeft size={24} />
           </button>
@@ -108,7 +108,7 @@ export default function TodayAtTemple({ data = {} }) {
 
         <p className={styles.footerNote}>
           "Bookings are processed directly with the temple administration"
-        </p>
+        </p> */}
       </div>
     </section>
   );

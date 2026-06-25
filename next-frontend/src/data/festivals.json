@@ -1,0 +1,344 @@
+[
+  {
+    "sNo": 1,
+    "festival": "Akshaya Triteeya",
+    "tithi": "Vaishakha-Shukla-Triteeya",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 2,
+    "festival": "Anantha Chaturthi",
+    "tithi": "Bhadrapada-Shukla-Chaturdashi",
+    "date2026": "2026-09-25",
+    "day2026": "Friday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 23,
+    "festival": "Naraka Chaturdashi",
+    "tithi": "Ashweeja-Krishna-Chaturdashi",
+    "date2026": "2026-11-08",
+    "day2026": "Sunday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 4,
+    "festival": "Dhanalaxmi Pooja",
+    "tithi": "Ashweeja-Krishna-Chaturdashi",
+    "date2026": "2026-11-08",
+    "day2026": "Sunday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 3,
+    "festival": "Deepavali",
+    "tithi": "Ashweeja-Krishna-Chaturdashi",
+    "date2026": "2026-11-08",
+    "day2026": "Sunday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 5,
+    "festival": "Durga Asthami",
+    "tithi": "Ashweeja-Shukla-Ashtami",
+    "date2026": "2026-10-19",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 6,
+    "festival": "Ganesh Chaturthi",
+    "tithi": "Bhadrapada-Shukla-Chaturthi",
+    "date2026": "2026-09-15",
+    "day2026": "Tuesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 7,
+    "festival": "Geeta Jayanthi",
+    "tithi": "Margashira-Shukla-Ekadashi",
+    "date2026": "2026-12-20",
+    "day2026": "Sunday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 8,
+    "festival": "Gou Pooja",
+    "tithi": "Ashweeja-Krishna-Amavasya",
+    "date2026": "2026-11-09",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 9,
+    "festival": "Gowri Triteeya",
+    "tithi": "Bhadrapada-Shukla-Triteeya",
+    "date2026": "2026-09-14",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 10,
+    "festival": "Guru Poornima",
+    "tithi": "Ashadha-Shukla-Poornima",
+    "date2026": "2026-07-29",
+    "day2026": "Wednesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 11,
+    "festival": "Hanuman Jayanthi",
+    "tithi": "Chaitra-Shukla-Poornima",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-04-20",
+    "day2027": "Tuesday"
+  },
+  {
+    "sNo": 12,
+    "festival": "Holi Kamadahana",
+    "tithi": "Phalguna-Shukla-Chaturdashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 13,
+    "festival": "Karthik Poornima / Karthika Punnav",
+    "tithi": "Karthik-Shukla-Poornima",
+    "date2026": "2026-11-24",
+    "day2026": "Tuesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 14,
+    "festival": "Krishna Astami",
+    "tithi": "Shravana-Krishna-Ashtami",
+    "date2026": "2026-09-04",
+    "day2026": "Friday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 15,
+    "festival": "Lalitha Panchami",
+    "tithi": "Ashweeja-Shukla-Panchami",
+    "date2026": "2026-10-15",
+    "day2026": "Thursday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 38,
+    "festival": "Vijaya Dashami",
+    "tithi": "Ashweeja-Shukla-Dashami",
+    "date2026": "2026-10-21",
+    "day2026": "Wednesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 16,
+    "festival": "Madhwa Jayanthi",
+    "tithi": "Ashweeja-Shukla-Dashami",
+    "date2026": "2026-10-21",
+    "day2026": "Wednesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 17,
+    "festival": "Madhwa Navami",
+    "tithi": "Magha-Shukla-Navami",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-02-15",
+    "day2027": "Monday"
+  },
+  {
+    "sNo": 18,
+    "festival": "Maha Navami",
+    "tithi": "Ashweeja-Shukla-Navami",
+    "date2026": "2026-10-20",
+    "day2026": "Tuesday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 19,
+    "festival": "Maha Shivrathri",
+    "tithi": "Magha-Krishna-Triyodashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-03-06",
+    "day2027": "Saturday"
+  },
+  {
+    "sNo": 20,
+    "festival": "Mahalaya Amavasya",
+    "tithi": "Bhadrapada-Krishna-Amavasya",
+    "date2026": "2026-10-10",
+    "day2026": "Saturday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 21,
+    "festival": "Mukkoti Dwadashi",
+    "tithi": "Margashira-Shukla-Dwadashi",
+    "date2026": "2026-12-21",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 22,
+    "festival": "Nag Panchami",
+    "tithi": "Shravana-Shukla-Panchami",
+    "date2026": "2026-08-17",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 24,
+    "festival": "Narasimha Jayanthi",
+    "tithi": "Vaishakha-Shukla-Triyodashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 25,
+    "festival": "Rama Navami",
+    "tithi": "Chaitra-Shukla-Navami",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-04-15",
+    "day2027": "Thursday"
+  },
+  {
+    "sNo": 26,
+    "festival": "Ratha Sapthami",
+    "tithi": "Magha-Shukla-Sapthami",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-02-13",
+    "day2027": "Saturday"
+  },
+  {
+    "sNo": 27,
+    "festival": "Rhaghupakarma",
+    "tithi": "Shravana-Shukla-Poornima",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 28,
+    "festival": "Sharada Pooja",
+    "tithi": "Ashweeja-Shukla-Shashti",
+    "date2026": "2026-10-16",
+    "day2026": "Friday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 29,
+    "festival": "Tulasi Pooja",
+    "tithi": "Karthik-Shukla-Dwadashi",
+    "date2026": "2026-11-21",
+    "day2026": "Saturday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 30,
+    "festival": "Ugadi",
+    "tithi": "Chaitra-Shukla-Pratipada",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-04-07",
+    "day2027": "Wednesday"
+  },
+  {
+    "sNo": 31,
+    "festival": "Vaikunta Chaturdashi",
+    "tithi": "Karthik-Shukla-Chaturdashi",
+    "date2026": "2026-11-23",
+    "day2026": "Monday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 32,
+    "festival": "Vaikunta Ekadashi",
+    "tithi": "Pushya-Shukla-Ekadashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-01-19",
+    "day2027": "Tuesday"
+  },
+  {
+    "sNo": 33,
+    "festival": "Vaishakha Poornima",
+    "tithi": "Vaishakha-Shukla-Poornima",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 34,
+    "festival": "Vaishnav Ekadashi",
+    "tithi": "Vaishakha-Shukla-Ekadashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 35,
+    "festival": "Vara Mahalaxmi",
+    "tithi": "Shravana-Shukla-Chaturdashi",
+    "date2026": "2026-08-27",
+    "day2026": "Thursday",
+    "date2027": null,
+    "day2027": null
+  },
+  {
+    "sNo": 36,
+    "festival": "Vasanta Panchami",
+    "tithi": "Magha-Shukla-Panchami",
+    "date2026": null,
+    "day2026": null,
+    "date2027": "2027-02-11",
+    "day2027": "Thursday"
+  },
+  {
+    "sNo": 37,
+    "festival": "Vedavyasa Jayanthi",
+    "tithi": "Vaishakha-Shukla-Dwadashi",
+    "date2026": null,
+    "day2026": null,
+    "date2027": null,
+    "day2027": null
+  }
+]

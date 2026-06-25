@@ -83,12 +83,14 @@ export default function Header() {
               <div className={styles.searchIcon} aria-label="Search">
                 <CustomSearchIcon size={36} />
               </div>
-              <button className={styles.btnBookNow} onClick={() => setIsBookPoojaOpen(true)}>
+              {/* Book Pooja button moved to left nav (pill menu) on desktop */}
+              {/* <button className={styles.btnBookNow} onClick={() => setIsBookPoojaOpen(true)}>
                 <span className={styles.btnTextLong}>BOOK </span>POOJA
-              </button>
-              <button onClick={() => setIsTempleLoginOpen(true)} className={styles.btnLogin} aria-label="Temple Login">
+              </button> */}
+              {/* Temple Login button moved to right nav (pill menu) on desktop */}
+              {/* <button onClick={() => setIsTempleLoginOpen(true)} className={styles.btnLogin} aria-label="Temple Login">
                 TEMPLE LOGIN
-              </button>
+              </button> */}
             </div>
             <div
               className={styles.languageSwitcher}
@@ -113,8 +115,12 @@ export default function Header() {
             <div className={styles.desktopOnlyNav}>
               <Link href="/" className={`${styles.navLink} ${isActive('/')}`} aria-current={pathname === '/' ? 'page' : undefined}>Home</Link>
               <Link href="/temples" className={`${styles.navLink} ${isActive('/temples')}`} aria-current={pathname === '/temples' ? 'page' : undefined}>Temples</Link>
-              <Link href="/poojas" className={`${styles.navLink} ${isActive('/poojas')}`} aria-current={pathname === '/poojas' ? 'page' : undefined}>Poojas</Link>
-              <Link href="/festivals" className={`${styles.navLink} ${isActive('/festivals')}`} aria-current={pathname === '/festivals' ? 'page' : undefined}>Festivals</Link>
+              {/* <Link href="/poojas" className={`${styles.navLink} ${isActive('/poojas')}`} aria-current={pathname === '/poojas' ? 'page' : undefined}>Poojas</Link> */}
+              {/* <Link href="/festivals" className={`${styles.navLink} ${isActive('/festivals')}`} aria-current={pathname === '/festivals' ? 'page' : undefined}>Festivals</Link> */}
+              {/* Book Pooja button moved here from top bar desktopOnly section */}
+              <button className={styles.btnBookNow} onClick={() => setIsBookPoojaOpen(true)}>
+                <span className={styles.btnTextLong}>BOOK </span>POOJA
+              </button>
             </div>
 
             {/* Mobile Actions (Left) - Book Pooja */}
@@ -135,10 +141,14 @@ export default function Header() {
           <nav className={styles.navRight}>
             {/* Desktop Links */}
             <div className={styles.desktopOnlyNav}>
-              <Link href="/bhajans-stotras" className={`${styles.navLink} ${isActive('/bhajans-stotras')}`} aria-current={pathname === '/bhajans-stotras' ? 'page' : undefined}>Bhajans & Stotras</Link>
-              <Link href="/devotion" className={`${styles.navLink} ${isActive('/devotion')}`} aria-current={pathname === '/devotion' ? 'page' : undefined}>My Devotion</Link>
+              {/* <Link href="/bhajans-stotras" className={`${styles.navLink} ${isActive('/bhajans-stotras')}`} aria-current={pathname === '/bhajans-stotras' ? 'page' : undefined}>Bhajans & Stotras</Link>
+              <Link href="/devotion" className={`${styles.navLink} ${isActive('/devotion')}`} aria-current={pathname === '/devotion' ? 'page' : undefined}>My Devotion</Link> */}
               <Link href="/about" className={`${styles.navLink} ${isActive('/about')}`} aria-current={pathname === '/about' ? 'page' : undefined}>About Us</Link>
               <Link href="/contact" className={`${styles.navLink} ${isActive('/contact')}`} aria-current={pathname === '/contact' ? 'page' : undefined}>Contact</Link>
+              {/* Temple Login button moved here from top bar desktopOnly section */}
+              <button onClick={() => setIsTempleLoginOpen(true)} className={styles.btnLogin} aria-label="Temple Login">
+                TEMPLE LOGIN
+              </button>
             </div>
 
             {/* Mobile Actions (Right) - Search and Burger */}

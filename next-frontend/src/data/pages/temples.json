@@ -21,7 +21,6 @@
       "id": "temple-grid",
       "type": "TempleListingGrid",
       "props": {
-        "apiUrl": "http://localhost:8000/api/temples",
         "loadMoreIncrement": 9
       }
     }

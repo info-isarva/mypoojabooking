@@ -1,272 +1,197 @@
 [
   {
-    "id": 1,
-    "name": "Dwarkadhish Temple",
-    "slug": "dwarkadhish",
-    "location": "Dwarka, Gujarat",
-    "image": "temple_somnath.png",
-    "description": "Dwarka is one of the holiest sites in India, part of the Char Dham pilgrimage.",
-    "tags": ["Pooja", "Prasad", "Darshan"]
+    "id": 31,
+    "name": "Anegudde Sri Vinayaka Devasthana",
+    "slug": "anegudde-sri-vinayaka-devasthana",
+    "location": "Kumbashi, Kundapur, Karnataka",
+    "image": "/assets/images/temple-image/Aanegudde-temple.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "One of Karnataka's revered Mukti Sthalas dedicated to Lord Vinayaka.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Annadanam",
+      "Darshan",
+      "Ganapathi Seva"
+    ],
+    "website": "https://aneguddetemple.in/"
   },
   {
-    "id": 2,
-    "name": "Kedarnath Temple",
-    "slug": "kedarnath",
-    "location": "Kedarnath, Uttarakhand",
-    "image": "temple_kedarnath.png",
-    "description": "One of the twelve Jyotirlingas, dedicated to Lord Shiva in the Himalayas.",
-    "tags": ["Pooja", "Prasad", "Darshan"]
+    "id": 32,
+    "name": "Shree Mahalasa Temple",
+    "slug": "shree-mahalasa-temple",
+    "location": "Konchady, Mangaluru, Karnataka",
+    "image": "/assets/images/temple-image/Mahalasanarayani.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "Prominent GSB temple dedicated to Goddess Mahalasa Narayani.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan",
+      "Festival",
+      "Annadanam"
+    ],
+    "website": "https://www.mahalasanarayani.com"
   },
   {
-    "id": 3,
-    "name": "Mangalnath Temple",
-    "slug": "mangalnath",
-    "location": "Ujjain, Madhya Pradesh",
-    "image": "temple_mahakal.png",
-    "description": "Dedicated to Lord Shiva, believed to be the birthplace of Mars.",
-    "tags": ["Pooja", "Prasad", "Photography"]
+    "id": 33,
+    "name": "Shree Venkataramana Temple",
+    "slug": "shree-venkataramana-temple-konchady",
+    "location": "Konchady, Mangaluru, Karnataka",
+    "image": "/assets/images/temple-image/Mahalasanarayani.jpg",
+    "type": "Temple",
+    "featured": false,
+    "popular": false,
+    "description": "Historic temple dedicated to Lord Venkataramana.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan",
+      "Utsav"
+    ],
+    "website": "https://www.mahalasanarayani.com"
   },
   {
-    "id": 4,
-    "name": "Kashi Vishwanath",
-    "slug": "kashi-vishwanath",
-    "location": "Varanasi, Uttar Pradesh",
-    "image": "temple_kashi.png",
-    "description": "One of the most famous Hindu temples dedicated to Lord Shiva.",
-    "tags": ["Pooja", "Aarti", "Darshan"]
+    "id": 34,
+    "name": "Shree Venkataramana Devasthan",
+    "slug": "shree-venkataramana-devasthan-bengaluru",
+    "location": "Ananthnagar, Bengaluru, Karnataka",
+    "image": "/assets/images/temple-image/svdananthnagar.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "Temple serving devotees through regular worship and festivals.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan"
+    ],
+    "website": "https://mypoojabooking.com/svdananthnagar/"
   },
   {
-    "id": 5,
-    "name": "Tirumala Tirupati",
-    "slug": "tirupati",
-    "location": "Tirupati, Andhra Pradesh",
-    "image": "temple_tirupati.png",
-    "description": "The world's richest temple, dedicated to Lord Venkateswara.",
-    "tags": ["Seva", "Prasad", "Darshan"]
+    "id": 35,
+    "name": "Srimath Anantheshwar Temple",
+    "slug": "srimath-anantheshwar-temple",
+    "location": "Manjeshwar, Kerala",
+    "image": "/assets/images/temple-image/Manjeshwar.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "MANJESHWAR or Manjulakshetra with its Puranic background is celebrated for its Temple dedicated to Srimad Anantheshwara, that is Shri Shiva accompanied by Shesha or Anantha.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan",
+      "Festival"
+    ],
+    "website": "https://www.manjeshwar.org/"
   },
   {
-    "id": 6,
-    "name": "Jagannath Puri",
-    "slug": "jagannath-puri",
-    "location": "Puri, Odisha",
-    "image": "temple_jagannath.png",
-    "description": "Famous for its annual Ratha Yatra and the deity Jagannath.",
-    "tags": ["Mahaprasad", "Rath Yatra"]
+    "id": 37,
+    "name": "Sri Vittal Rakhumai Mandir",
+    "slug": "sri-vittal-rakhumai-mandir",
+    "location": "Dahisar, Mumbai, Maharashtra",
+    "image": "/assets/images/temple-image/svrm.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "Temple dedicated to Lord Vittal and Rakhumai.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan",
+      "Bhajan"
+    ],
+    "website": "https://svrm.in/"
   },
   {
-    "id": 7,
-    "name": "Meenakshi Amman Temple",
-    "slug": "meenakshi-amman",
-    "location": "Madurai, Tamil Nadu",
-    "image": "temple_somnath.png",
-    "description": "A historic Hindu temple located on the southern bank of the Vaigai River.",
-    "tags": ["Architecture", "Darshan", "History"]
-  },
-  {
-    "id": 8,
-    "name": "Badrinath Temple",
-    "slug": "badrinath",
-    "location": "Badrinath, Uttarakhand",
-    "image": "temple_kedarnath.png",
-    "description": "One of the Char Dham and Chota Char Dham pilgrimage sites.",
-    "tags": ["Vishnu", "Pooja", "Himalayas"]
-  },
-  {
-    "id": 9,
-    "name": "Somnath Temple",
-    "slug": "somnath",
-    "location": "Veraval, Gujarat",
-    "image": "temple_somnath.png",
-    "description": "The first among the twelve Jyotirlinga shrines of Shiva.",
-    "tags": ["Jyotirlinga", "Aarti", "Sea View"]
-  },
-  {
-    "id": 10,
-    "name": "Vaishno Devi",
-    "slug": "vaishno-devi",
-    "location": "Katra, Jammu & Kashmir",
-    "image": "temple_kedarnath.png",
-    "description": "A holy cave temple dedicated to Goddess Vaishno Devi.",
-    "tags": ["Trekking", "Shakti", "Blessings"]
-  },
-  {
-    "id": 11,
-    "name": "Amarnath Temple",
-    "slug": "amarnath",
-    "location": "Anantnag, Jammu & Kashmir",
-    "image": "temple_kedarnath.png",
-    "description": "Famous for the natural ice lingam that forms inside the cave.",
-    "tags": ["Cave", "Shiva", "Yatra"]
-  },
-  {
-    "id": 12,
-    "name": "Shirdi Sai Baba",
-    "slug": "shirdi-sai-baba",
-    "location": "Shirdi, Maharashtra",
-    "image": "temple_mahakal.png",
-    "description": "Dedicated to Sai Baba, a spiritual master who taught love and forgiveness.",
-    "tags": ["Peace", "Prasad", "Faith"]
-  },
-  {
-    "id": 13,
-    "name": "Rameshwaram Temple",
-    "slug": "rameshwaram",
-    "location": "Rameshwaram, Tamil Nadu",
-    "image": "temple_somnath.png",
-    "description": "One of the twelve Jyotirlingas, where Lord Rama prayed to Shiva.",
-    "tags": ["Jyotirlinga", "Island", "Pooja"]
-  },
-  {
-    "id": 14,
-    "name": "Golden Temple",
-    "slug": "golden-temple",
-    "location": "Amritsar, Punjab",
-    "image": "temple_kashi.png",
-    "description": "The preeminent spiritual site of Sikhism, known for its gold-covered dome.",
-    "tags": ["Langar", "Peace", "Sikhism"]
-  },
-  {
-    "id": 15,
-    "name": "Siddhivinayak Temple",
-    "slug": "siddhivinayak",
-    "location": "Mumbai, Maharashtra",
-    "image": "temple_mahakal.png",
-    "description": "Dedicated to Lord Ganesha, the remover of obstacles.",
-    "tags": ["Ganesha", "Pooja", "Mumbai"]
-  },
-  {
-    "id": 16,
-    "name": "Kamakhya Temple",
-    "slug": "kamakhya",
-    "location": "Guwahati, Assam",
-    "image": "temple_jagannath.png",
-    "description": "A major Shakti Peeth dedicated to the mother goddess Kamakhya.",
-    "tags": ["Shakti", "Peeth", "History"]
-  },
-  {
-    "id": 17,
-    "name": "Brihadeeswara Temple",
-    "slug": "brihadeeswara",
-    "location": "Thanjavur, Tamil Nadu",
-    "image": "temple_somnath.png",
-    "description": "A Chola dynasty masterpiece and UNESCO World Heritage Site.",
-    "tags": ["Chola", "UNESCO", "Architecture"]
-  },
-  {
-    "id": 18,
-    "name": "Lingaraja Temple",
-    "slug": "lingaraja",
-    "location": "Bhubaneswar, Odisha",
-    "image": "temple_jagannath.png",
-    "description": "The largest temple in the \"Temple City\" of India.",
-    "tags": ["Shiva", "Odisha", "Ancient"]
-  },
-  {
-    "id": 19,
-    "name": "Padmanabhaswamy Temple",
-    "slug": "padmanabhaswamy",
-    "location": "Thiruvananthapuram, Kerala",
-    "image": "temple_tirupati.png",
-    "description": "Known for its architectural beauty and hidden treasures.",
-    "tags": ["Wealth", "Vishnu", "Kerala"]
-  },
-  {
-    "id": 20,
-    "name": "Khajuraho Temples",
-    "slug": "khajuraho",
-    "location": "Khajuraho, Madhya Pradesh",
-    "image": "temple_mahakal.png",
-    "description": "Famous for their nagara-style architectural symbolism.",
-    "tags": ["Sculpture", "History", "UNESCO"]
-  },
-  {
-    "id": 21,
-    "name": "Lotus Temple",
-    "slug": "lotus-temple",
+    "id": 38,
+    "name": "Shri Krishna Mandir Trust",
+    "slug": "shri-krishna-mandir-trust",
     "location": "New Delhi",
-    "image": "temple_kashi.png",
-    "description": "A Baháʼí House of Worship known for its flowerlike shape.",
-    "tags": ["Modern", "Peace", "Delhi"]
+    "image": "/assets/images/temple-image/Krishnamandirdelhi.jpg",
+    "type": "Temple",
+    "featured": true,
+    "popular": true,
+    "description": "Spiritual centre dedicated to Lord Krishna.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan"
+    ],
+    "website": "https://www.krishnamandirdelhi.org/"
   },
   {
-    "id": 22,
-    "name": "Akshardham Temple",
-    "slug": "akshardham",
-    "location": "Delhi",
-    "image": "temple_kashi.png",
-    "description": "A spiritual-cultural campus displaying Hindu culture and spirituality.",
-    "tags": ["Culture", "Exhibition", "Grand"]
+    "id": 39,
+    "name": "Walkeshwar Shree Kashimath Samsthan",
+    "slug": "walkeshwar-shree-kashimath-samsthan",
+    "location": "Mumbai, Maharashtra",
+    "image": "/assets/images/temple-image/Kashimath.jpg",
+    "type": "Math",
+    "featured": true,
+    "popular": true,
+    "description": "Prominent and frequently visited Shree Kashi Math centre with strong spiritual significance.",
+    "tags": [
+      "Pooja",
+      "Darshan",
+      "Festivals"
+    ],
+    "website": "https://www.kashimath.org"
   },
   {
-    "id": 23,
-    "name": "Sabarimala Temple",
-    "slug": "sabarimala",
-    "location": "Pathanamthitta, Kerala",
-    "image": "temple_tirupati.png",
-    "description": "Dedicated to Lord Ayyappa, located atop a mountain.",
-    "tags": ["Ayyappa", "Trekking", "Devotion"]
+    "id": 40,
+    "name": "Shree Kashimath Samsthan - Vyasashram",
+    "slug": "shree-kashimath-samsthan-varanasi-vyasashram",
+    "location": "Varanasi, Uttar Pradesh",
+    "image": "/assets/images/temple-image/Kashimath.jpg",
+    "type": "Math",
+    "featured": false,
+    "popular": false,
+    "description": "Spiritual ashram and centre under Shree Kashi Math Samsthan, Varanasi.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan"
+    ],
+    "website": "https://www.kashimath.org"
   },
   {
-    "id": 24,
-    "name": "Dakshineswar Kali Temple",
-    "slug": "dakshineswar-kali",
-    "location": "Kolkata, West Bengal",
-    "image": "temple_kashi.png",
-    "description": "A famous Kali temple where Ramakrishna Paramahamsa was a priest.",
-    "tags": ["Kali", "Ganges", "Bhakti"]
+    "id": 41,
+    "name": "Sri Vedavyasa Charitable Trust (Regd)",
+    "slug": "sri-vedavyasa-charitable-trust-haridwar",
+    "location": "Haridwar, Uttarakhand",
+    "image": "/assets/images/temple-image/Srivedavyasatrust.jpg",
+    "type": "Trust",
+    "featured": true,
+    "popular": true,
+    "description": "Charitable trust dedicated to spiritual welfare and maintaining Sri Vyasashram.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan",
+      "Gau Seva"
+    ],
+    "website": "https://srivedavyasatrust.com/"
   },
   {
-    "id": 25,
-    "name": "Kanyakumari Temple",
-    "slug": "kanyakumari",
-    "location": "Kanyakumari, Tamil Nadu",
-    "image": "temple_somnath.png",
-    "description": "Located at the southern tip of India, dedicated to Devi Kanya Kumari.",
-    "tags": ["Ocean", "Devi", "Sunset"]
-  },
-  {
-    "id": 26,
-    "name": "Yamunotri Temple",
-    "slug": "yamunotri",
-    "location": "Yamunotri, Uttarakhand",
-    "image": "temple_kedarnath.png",
-    "description": "The seat of Goddess Yamuna and the source of the Yamuna River.",
-    "tags": ["River", "Chota Char Dham", "Glacier"]
-  },
-  {
-    "id": 27,
-    "name": "Gangotri Temple",
-    "slug": "gangotri",
-    "location": "Gangotri, Uttarakhand",
-    "image": "temple_kedarnath.png",
-    "description": "The seat of Goddess Ganga and the source of the Ganges River.",
-    "tags": ["Ganga", "Holy", "Glacier"]
-  },
-  {
-    "id": 28,
-    "name": "Guruvayur Temple",
-    "slug": "guruvayur",
-    "location": "Guruvayur, Kerala",
-    "image": "temple_tirupati.png",
-    "description": "A famous Krishna temple known as the Dwarka of South India.",
-    "tags": ["Krishna", "Kerala", "Elephant"]
-  },
-  {
-    "id": 29,
-    "name": "Pashupatinath Temple",
-    "slug": "pashupatinath",
-    "location": "Kathmandu (Nepal Border)",
-    "image": "temple_kedarnath.png",
-    "description": "One of the most sacred Shiva temples on the banks of Bagmati River.",
-    "tags": ["Shiva", "Sacred", "Ancient"]
-  },
-  {
-    "id": 30,
-    "name": "Murudeshwar Temple",
-    "slug": "murudeshwar",
-    "location": "Murudeshwar, Karnataka",
-    "image": "temple_somnath.png",
-    "description": "Famous for the world's second tallest Shiva statue.",
-    "tags": ["Shiva", "Sea", "Tall Statue"]
+    "id": 42,
+    "name": "Kashi Moola Math Varanasi Chaturmas 2026",
+    "slug": "kashi-moola-math-varanasi-chaturmas-2026",
+    "location": "Varanasi, Uttar Pradesh",
+    "image": "/assets/images/temple-image/Kashimath.jpg",
+    "type": "Event",
+    "featured": true,
+    "popular": true,
+    "description": "Chaturmas 2026 holy observation at Kashi Moola Math, Varanasi.",
+    "tags": [
+      "Pooja",
+      "Prasad",
+      "Darshan"
+    ],
+    "website": "https://www.kashimath.org"
   }
 ]

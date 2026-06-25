@@ -147,6 +147,13 @@
   font-weight: 700;
   color: #F37021;
   line-height: 1.2;
+  /* Exactly 2 lines height */
+  height: calc(1.5rem * 1.2 * 2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .locationInfo {
@@ -168,6 +175,8 @@
   color: #4B5563;
   line-height: 1.5;
   margin: 0.5rem 0;
+  /* Exactly 2 lines height */
+  height: calc(1rem * 1.5 * 2);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -177,9 +186,22 @@
 
 .tagsContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.6rem;
   margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+  cursor: grab;
+  user-select: none;
+}
+
+.tagsContainer::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari */
+}
+
+.tagsContainer.dragging {
+  cursor: grabbing;
 }
 
 .tag {
@@ -189,6 +211,8 @@
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .cardBtn {
@@ -288,6 +312,8 @@
   .tag {
     padding: 0.3rem 0.8rem;
     font-size: 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .navBtn {
