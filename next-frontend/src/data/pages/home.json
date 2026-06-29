@@ -45,9 +45,9 @@
         "registerText": "Register as a Devotee",
         "registerLink": "https://mypoojabooking.com/registration/kashimath/1",
         "bookText": "Book Accommodation",
-        "bookLink": "https://mypoojabooking.com/registration/kashimath/1",
+        "bookLink": "https://mypoojabooking.com/erb/kashimath/23",
         "bhajanText": "Bhajana Booking",
-        "bhajanLink": "https://mypoojabooking.com/registration/kashimath/1",
+        "bhajanLink": "https://mypoojabooking.com/event/kashimath",
         "backgroundImage": "/assets/images/kashimath-chaturmasa-vratha-2026-01.jpg"
       }
     },

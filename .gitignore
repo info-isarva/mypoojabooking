@@ -35,3 +35,9 @@ next-frontend/.env.local
 next-frontend/.env.development.local
 next-frontend/.env.test.local
 next-frontend/.env.production.local
+
+# Backups and archives
+*.zip
+*.tar.gz
+mpb-website.zip
+
