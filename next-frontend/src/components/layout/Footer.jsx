@@ -22,10 +22,10 @@ const InstagramIcon = () => (
     className={styles.socialIcon}
   />
 );
-const YoutubeIcon = () => (
+const LinkedinIcon = () => (
   <img
-    src="/assets/images/icons/social-media/youtube.svg"
-    alt="YouTube"
+    src="/assets/images/icons/social-media/linkedin.svg"
+    alt="LinkedIn"
     width="40"
     height="40"
     className={styles.socialIcon}
@@ -58,9 +58,9 @@ export default function Footer() {
               Reviving sacred traditions through modern convenience. Bringing the divine closer to you, wherever you are.
             </p>
             <div className={styles.socials}>
-              <a href="https://www.facebook.com/mypoojabooking" className={styles.socialLink} aria-label="Facebook"><FacebookIcon /></a>
-              <a href="https://www.instagram.com/mypoojabooking" className={styles.socialLink} aria-label="Instagram"><InstagramIcon /></a>
-              <a href="https://www.youtube.com/mypoojabooking" className={styles.socialLink} aria-label="YouTube"><YoutubeIcon /></a>
+              <a href="https://www.facebook.com/Mypoojabooking" className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
+              <a href="https://www.instagram.com/mypoojabooking/" className={styles.socialLink} aria-label="Instagram" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
+              <a href="https://www.linkedin.com/company/79085257/" className={styles.socialLink} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><LinkedinIcon /></a>
             </div>
           </div>
 

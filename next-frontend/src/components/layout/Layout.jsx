@@ -20,9 +20,9 @@ export default function Layout({ children }) {
       "addressCountry": "IN"
     },
     "sameAs": [
-      "https://www.facebook.com/mypoojabooking",
-      "https://www.instagram.com/mypoojabooking",
-      "https://www.youtube.com/mypoojabooking"
+      "https://www.facebook.com/Mypoojabooking",
+      "https://www.instagram.com/mypoojabooking/",
+      "https://www.linkedin.com/company/79085257/"
     ]
   };
 
